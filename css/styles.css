@@ -132,4 +132,11 @@ nav li:nth-child(3) img{
 }	
 #searchBox h2{
 	color: 	#252839;
+	margin: 0 0 10px 0;
+}
+.append-form input{
+	margin-right: -1px;	
+}
+.append-form input, .append-form div, .btn-group{
+	display: inline-block;	
 }
