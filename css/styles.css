@@ -147,7 +147,18 @@ a.btn{
 	padding: 5px;
     	box-sizing: border-box;
 }
+#searchBox a.btn{
+	float: left;
+	height: 40px;
+	width: 40px;
+	text-align: center;	
+}
 a.btn img{
 	vertical-align: middle;	
 	margin-top: -4px;
+}
+.clear{
+	clear: both;
+	margin: 0;
+	padding: 0;
 }
