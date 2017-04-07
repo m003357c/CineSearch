@@ -135,7 +135,9 @@ nav li:nth-child(3) img{
 	margin: 0 0 10px 0;
 }
 .append-form input{
-	margin-right: -1px;	
+	margin-right: -5px;	
+	height: 40px;
+	border: none;
 }
 .append-form input, .append-form div, .btn-group{
 	display: inline-block;	
