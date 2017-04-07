@@ -164,7 +164,8 @@ a.btn{
 	line-height: 30px;
 }
 #searchBox a.btn:first-child{
-	border-right: 2px solid #f2b632;	
+	/*border-right: 2px solid #f2b632;	*/
+	margin-right: 2px;
 }
 a.btn img{
 	vertical-align: middle;	
