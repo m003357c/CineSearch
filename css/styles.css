@@ -138,9 +138,12 @@ nav li:nth-child(3) img{
 	margin-right: -5px;	
 	height: 40px;
 	border: none;
+	max-width: 197px;
+	width: 100%;
 }
 .append-form input, .append-form div, .btn-group{
 	display: inline-block;	
+	vertical-align: middle;
 }
 a.btn{
 	background: #252839;
@@ -152,8 +155,8 @@ a.btn{
 }
 #searchBox a.btn{
 	float: left;
-	height: 40px;
-	width: 40px;
+	height: 42px;
+     	width: 42px;
 	text-align: center;
 	line-height: 30px;
 }
