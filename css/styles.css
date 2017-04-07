@@ -116,7 +116,7 @@ nav li:nth-child(3) img{
 }
 #cineMap{
 	width: 100%;
-	height: 100%;
+	height: 130%;
 	-webkit-transform: skewY(6deg);
 	-moz-transform: skewY(6deg);
 	transform: skewY(6deg);
