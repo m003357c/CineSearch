@@ -28,7 +28,7 @@ function success(pos) {
 	
 	//create marker
 	var marker = new google.maps.Marker({
-		position: stoke,
+		position: userLoc,
 		title: "stoke position",
 		map: map
 		
