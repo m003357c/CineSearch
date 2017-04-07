@@ -101,8 +101,16 @@ nav li:nth-child(3) img{
 /*----------------------------------------------*/
 /*----------------- Map Styles -----------------*/
 /*----------------------------------------------*/
+#mapHolder{
+	height: 300px;
+	position: absolute;
+	overflow: hidden;
+}
 #cineMap{
-	height: 300px;	
+	position: absolute;
+	top: -12px;
+	bottom: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
 	-webkit-transform: skewY(-6deg);
