@@ -90,12 +90,6 @@ nav li:nth-child(2){
 	font-size: 21px;
 	letter-spacing: 2px;
 }
-.settings{
-	width: 100px;
-	height: 300px;
-	background-image: radial-gradient(circle at center, #f2b632 10px, transparent 10px);
-	background-size: 100px 100px;
-}
 nav li:nth-child(3){
 	text-align: right;
 }
