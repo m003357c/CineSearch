@@ -90,10 +90,27 @@ nav li:nth-child(2){
 	font-size: 21px;
 	letter-spacing: 2px;
 }
+.settings{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	border-radius: 50%;
+}
+.settings:before, .settings:after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	background-color: inherit;
+	border-radius: inherit;
+}
+.settings:before{
+	top: 40px;
+}
 .settings:after{
-	content: '\2807';
-	font-size: 30px;
-	color: #f2b632;
+  top: 80px
 }
 nav li:nth-child(3){
 	text-align: right;
