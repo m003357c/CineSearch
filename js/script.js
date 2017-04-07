@@ -16,7 +16,12 @@ function success(pos) {
 	var mapOptions = {   
 		zoom: 12,  
 		center: userLoc,
-		disableDefaultUI: false
+		zoomControl: true,
+		mapTypeControl: false,
+		scaleControl: true,
+		streetViewControl: false,
+		rotateControl: false,
+		fullscreenControl: false
 	};    
 	//create map using mapOptions 
 	var map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
