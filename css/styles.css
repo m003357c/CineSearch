@@ -140,6 +140,8 @@ nav li:nth-child(3) img{
 	border: none;
 	max-width: 197px;
 	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 .append-form input, .append-form div, .btn-group{
 	display: inline-block;	
