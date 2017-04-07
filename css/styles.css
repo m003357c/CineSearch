@@ -22,7 +22,8 @@ body, nav ul{
 	margin: 0;
 }
 .box{
-	padding: 0 20px;
+	margin: 0 20px;
+	padding: 20px;
 	box-sizing: border-box;
 }
 /*-----------------------------------------*/
