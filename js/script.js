@@ -27,12 +27,12 @@ function success(pos) {
 	var map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
 	map.setOptions({draggable: true});
 	//create marker
-	var marker = new google.maps.Marker({
+	/*var marker = new google.maps.Marker({
 		position: userLoc,
 		title: "stoke position",
 		map: map
 		
-	});
+	});*/
 };
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
