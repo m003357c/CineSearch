@@ -140,3 +140,11 @@ nav li:nth-child(3) img{
 .append-form input, .append-form div, .btn-group{
 	display: inline-block;	
 }
+.btn-group a{
+	background: #252839;
+	color: #fff;
+	text-transform: uppercase;
+}
+.btn-group img{
+	vertical-align: middle;	
+}
