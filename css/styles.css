@@ -108,7 +108,7 @@ nav li:nth-child(3) img{
 	position: relative;
 	z-index: -1;
 	overflow: hidden;
-	margin-bottom: -120px;
+	margin-bottom: -80px;
 	-webkit-transform: skewY(-6deg);
 	-moz-transform: skewY(-6deg);
 	transform: skewY(-6deg);
