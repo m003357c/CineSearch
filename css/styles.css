@@ -36,20 +36,6 @@ h1, h2, h3{
 /*----------------------------------------------*/
 /*----------------- Navigation -----------------*/
 /*----------------------------------------------*/
-nav{
-	background: #252839;
-}
-nav ul{
-	padding: 0;
-}
-nav ul li{
-	display: inline-block;
-	list-style-type: none;
-}
-nav ul li img{
-	vertical-align: middle;
-}
-/*------------- Top Nav Styles -------------*/
 header{
 	position: fixed;
 	top: 0;
@@ -57,15 +43,24 @@ header{
 	z-index: 9999;
 }
 nav{
+	background: #252839;
 	max-height: 55px;
 	padding: 20px 25px;
 	-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
 }
-nav li{
+nav ul{
+	padding: 0;
+}
+nav ul li{
 	float: left;
 	line-height: 100%;
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li img{
+	vertical-align: middle;
 }
 nav li:nth-child(1), nav li:nth-child(3){
 	width:10%
