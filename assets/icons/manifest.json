@@ -1,12 +1,12 @@
 {
- "name": "Juice Box",
- "short_name": "Juice Box",
- "start_url": "https://m003357c.github.io/Juice_Box/index.html",
+ "name": "CineSearch",
+ "short_name": "CineSearch",
+ "start_url": "https://m003357c.github.io/CineSearch/index.html",
  "orientation": "portrait",
  "display": "standalone",
- "background_color": "#d71010",
- "theme_color": "#d71010",
- "description": "A vending machine ordering app",
+ "background_color": "#252839",
+ "theme_color": "#252839",
+ "description": "Search showing times for all local cinemas",
  "icons": [
   {
    "src": "android-icon-36x36.png",
