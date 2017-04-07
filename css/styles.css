@@ -80,10 +80,10 @@ nav li:nth-child(1), nav li:nth-child(3){
   top: 0.25em;
   width: 1em;
   height: 0.15em;
-  background: black;
+  background: #f2b632;
   box-shadow: 
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
+    0 0.25em 0 0 #f2b632,
+    0 0.5em 0 0 #f2b632;
 }
 nav li:nth-child(2){
 	width: 80%;
