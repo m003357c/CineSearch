@@ -146,16 +146,18 @@ a.btn{
 	text-transform: uppercase;
 	padding: 5px;
     	box-sizing: border-box;
+	text-decoration: none;
 }
 #searchBox a.btn{
 	float: left;
 	height: 40px;
 	width: 40px;
-	text-align: center;	
+	text-align: center;
+	line-height: 30px;
 }
 a.btn img{
 	vertical-align: middle;	
-	margin-top: -4px;
+	margin-top: -2px;
 }
 .clear{
 	clear: both;
