@@ -98,3 +98,8 @@ nav li:nth-child(3){
 nav li:nth-child(3) img{
 	width: 5px;
 }
+
+
+#cineMap{
+	height: 300px;	
+}
