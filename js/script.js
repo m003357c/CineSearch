@@ -1,47 +1,68 @@
-/*function initMap() {
-    var stoke = {lat: 53.010274, lng: -2.178498};
-    var map = new google.maps.Map(document.getElementById('cineMap'), {
-        zoom: 13,
-        center: stoke
-    });
-    var marker = new google.maps.Marker({
-        position: stoke,
-        map: map
-    });
-}*/
-window.addEventListener('load', displayMap );
 let options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0
 };
+
 const output = document.getElementById("myLocation");
-function displayMap(pos) {
+
+function success(pos) {
 	
 	let latitude  = pos.coords.latitude;
-    let longitude = pos.coords.longitude;
+                        let longitude = pos.coords.longitude;
 	let accuracy = pos.coords.accuracy;
 
-    if (document.getElementById( 'cineMap' ) === null) {
-        return false; 
-    } 
-    //latitude and longitude for Mellor building 
-    var userLoc = new google.maps.LatLng(${latitude}, ${longitude}); 
-    //set up mapOptions (Zoom = 0 - zoomed out)
-    var mapOptions = {
-        zoom: 12, 
-        center: userLoc 
-    };     
-    //create map using mapOptions 
-    var map = new google.maps.Map(document.getElementById('cineMap'), mapOptions);
-    
-    var marker = new google.maps.Marker({
-        position: userLoc,
-        map: map
-    });
+    output.innerHTML = `Latitude is ${latitude} and Longitude is ${longitude}. More or less ${accuracy} metres.`;
+
+    const img = new Image();
+    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+
+    output.appendChild(img);
 
 };
+
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 };
-navigator.geolocation.getCurrentPosition(displayMap, error, options);
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+window.addEventListener('load', displayMap );
+function displayMap() {
+	if (document.getElementById( 'cineMap' ) === null) {
+		return false;
+	} 
+	//latitude and longitude for Mellor building  
+	var stoke = new google.maps.LatLng(53.010380, -2.180229); 
+	//set up mapOptions (Zoom = 0 - zoomed out)  
+	var mapOptions = {   
+		zoom: 12,  
+		center: stoke  
+	};    
+	//create map using mapOptions 
+	var map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
+	
+	//create marker
+	var marker = new google.maps.Marker({
+		position: stoke,
+		title: "stoke position",
+		map: map
+	});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
