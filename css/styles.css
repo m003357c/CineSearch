@@ -163,6 +163,9 @@ a.btn{
 	text-align: center;
 	line-height: 30px;
 }
+#searchBox a.btn:first-child{
+	border: 2px solid #f2b632;	
+}
 a.btn img{
 	vertical-align: middle;	
 	margin-top: -2px;
