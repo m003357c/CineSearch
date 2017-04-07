@@ -37,7 +37,25 @@
         </nav>
 	</header>
   <section class="container">
-
+	<div id="cineMap">
+		
+	</div>
+	<script>
+		function initMap() {
+			var stoke = {lat: 53.010274, lng: -2.178498};
+			var map = new google.maps.Map(document.getElementById('cineMap'), {
+				zoom: 4,
+				center: stoke
+			});
+			var marker = new google.maps.Marker({
+				position: stoke,
+				map: map
+			});
+		}
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap">
+	</script>
   </section>
   <script  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="  crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
