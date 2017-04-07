@@ -25,7 +25,7 @@ function success(pos) {
 	};    
 	//create map using mapOptions 
 	var map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
-	
+	map.setOptions({draggable: true});
 	//create marker
 	var marker = new google.maps.Marker({
 		position: userLoc,
