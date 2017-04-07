@@ -92,7 +92,8 @@ nav li:nth-child(2){
 }
 .settings:after{
 	content: '\2807';
-	font-size: 100px;	
+	font-size: 100px;
+	color: #f2b632;
 }
 nav li:nth-child(3){
 	text-align: right;
