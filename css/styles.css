@@ -103,7 +103,7 @@ nav li:nth-child(3) img{
 /*----------------------------------------------*/
 #mapHolder{
 	height: 300px;
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 }
 #cineMap{
