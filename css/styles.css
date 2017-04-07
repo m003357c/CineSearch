@@ -106,7 +106,9 @@ nav li:nth-child(3) img{
 	width: 100%;
 	height: 120px;
 	position: relative;
+	z-index: -1;
 	overflow: hidden;
+	margin-bottom: -120px;
 	-webkit-transform: skewY(-6deg);
 	-moz-transform: skewY(-6deg);
 	transform: skewY(-6deg);
@@ -121,4 +123,13 @@ nav li:nth-child(3) img{
 	-webkit-transform: skewY(6deg);
 	-moz-transform: skewY(6deg);
 	transform: skewY(6deg);
+}
+/*----------------------------------------------*/
+/*----------------- Search Box -----------------*/
+/*----------------------------------------------*/
+#searchBox{
+	background: #f2b632;
+}	
+#searchBox h2{
+	color: 	#252839;
 }
