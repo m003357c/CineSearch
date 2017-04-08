@@ -10,7 +10,7 @@ var CACHED_URLS = [
     BASEPATH +  'assets/icons/manifest.json',
     BASEPATH +  'films.json',
     BASEPATH +  'js/script.js',
-    'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+    'https://code.jquery.com/jquery-3.2.1.slim.min.js'
   // Images
 ];
 
