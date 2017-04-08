@@ -200,4 +200,6 @@ figure img{
 	height: auto;
 	max-width: 100%;
 }
-
+figcaption{
+	font-size: 12px;	
+}
