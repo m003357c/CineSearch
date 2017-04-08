@@ -63,3 +63,14 @@ if(filmContainer){
             filmContainer.innerHTML = filmsHTML;
         });
 }*/
+$(document).ready(function(){
+	
+$(document).ready(function(){
+	$('.hamburger').click(function(){
+		$("nav").addClass("is-showing");
+		
+	});	
+	$("nav .close").click(function(){
+		$("nav").removeClass("is-showing");
+	)};
+});
