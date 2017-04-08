@@ -74,7 +74,8 @@ header{
 	vertical-align: middle;
 }
 .top-bar li:nth-child(1), .top-bar li:nth-child(3){
-	width:10%
+	width:10%;
+	height: 21px;
 }
 .hamburger {
 	position: relative;
