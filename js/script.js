@@ -52,16 +52,15 @@ window.addEventListener('load', success );
 
 const filmContainer = document.getElementById('boxOffice');
 if(filmContainer){
-    fetch("films.json")
-        .then(response => {
+    fetch("films.json").then(response => {
             return response.json();
         }).then(films => {
-           	const filmsHTML = films.map(event => {
-                return `<figure>
-			  <img src="${films.picture}" alt="${films.name} Movie Poster">
-			  <figcaption>${films.name}</figcaption>
-		  </figure>`;
-            }).join("\n");
+		const filmsHTML = films.map(event => {
+			return `<figure>
+				  <img src="${films.picture}" alt="${films.name} Movie Poster">
+				  <figcaption>${films.name}</figcaption>
+				</figure>`;
+		}).join("\n");
             
             filmContainer.innerHTML = filmsHTML;
         });
