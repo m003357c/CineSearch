@@ -52,7 +52,7 @@ window.addEventListener('load', success );
 
 const filmContainer = document.getElementById('boxOffice');
 if(filmContainer){
-    fetch("films.json")
+    fetch("../films.json")
         .then(response => {
             return response.json();
         }).then(films => {
