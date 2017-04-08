@@ -72,5 +72,5 @@ $(document).ready(function(){
 	});	
 	$("nav .close").click(function(){
 		$("nav").removeClass("is-showing");
-	)};
+	});
 });
