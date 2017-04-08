@@ -48,7 +48,7 @@ if(filmContainer){
         .then(response => {
             return response.json();
         }).then(films => {
-            const filmsHTML = films.map(event => {
+           	const filmsHTML = films.map(event => {
                 return `<figure>
 			  <img src="${films.picture}" alt="${films.name} Movie Poster">
 			  <figcaption>${films.name}</figcaption>
