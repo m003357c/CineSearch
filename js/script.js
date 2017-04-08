@@ -64,7 +64,7 @@ if(filmContainer){
         });
 }*/
 $(document).ready(function(){
-	$('.hamburger').click(function(){
+	$('.hamburger').parent().click(function(){
 		$("nav").addClass("is-showing");
 		
 	});	
