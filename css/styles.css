@@ -23,7 +23,6 @@ body, nav ul{
 }
 .box{
 	margin: 0 20px;
-	padding: 20px;
 	box-sizing: border-box;
 }
 .clear{
@@ -135,6 +134,7 @@ nav li:nth-child(3) img{
 /*----------------------------------------------*/
 #searchBox{
 	background: #f2b632;
+	padding: 20px;
 }	
 #searchBox h2{
 	color: 	#252839;
@@ -182,10 +182,18 @@ a.btn img{
 /*----------------------------------------------*/
 figure{
 	width: 50%;
-	padding: 0 10px;
 	box-sizing: border-box;
-	margin-bottom: 15px;
+	margin:0 0 15px 0;
 	float: left;
 }	
-
+figure:nth-child(odd){
+	padding-right: 10px;
+}
+figure:nth-child(even){
+	padding-left: 10px;
+}
+figure img{
+	height: auto;
+	max-width: 100%;
+}
 
