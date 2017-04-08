@@ -135,6 +135,7 @@ nav li:nth-child(3) img{
 #searchBox{
 	background: #f2b632;
 	padding: 20px;
+	margin-bottom: 25px;
 }	
 #searchBox h2{
 	color: 	#252839;
