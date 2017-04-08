@@ -1,36 +1,17 @@
-var CACHE_NAME = 'JuiceBoxCache';
-var BASEPATH = '/Juice_Box/';
+var CACHE_NAME = 'CineCache';
+var BASEPATH = '/CineSearch/';
 var CACHED_URLS = [
   // Our HTML
     BASEPATH + 'index.html',
-    BASEPATH + 'basket.html',
-    BASEPATH + 'checkout.html',
   // Stylesheets and fonts    
-    BASEPATH +  'css/styles-min.css',
+    BASEPATH +  'css/styles.css',
     'https://fonts.googleapis.com/css?family=Roboto:400,300',
   // JavaScript
     BASEPATH +  'assets/icons/manifest.json',
-    BASEPATH +  'js/script-min.js',
+    BASEPATH +  'films.json',
+    BASEPATH +  'js/script.js',
     'https://code.jquery.com/jquery-3.2.1.slim.min.js',
   // Images
-    BASEPATH +  'assets/images/back.png',
-    BASEPATH +  'assets/images/home.png',
-    BASEPATH +  'assets/images/basket.png',
-    BASEPATH +  'assets/images/checkout.png',
-    BASEPATH +  'assets/images/menu-citrus.svg',
-    BASEPATH +  'assets/images/menu-berry.svg',
-    BASEPATH +  'assets/images/menu-green.svg',
-    BASEPATH +  'assets/images/menu-red.svg',
-    BASEPATH +  'assets/images/prod-citrus.svg',
-    BASEPATH +  'assets/images/prod-berry.svg',
-    BASEPATH +  'assets/images/prod-green.svg',
-    BASEPATH +  'assets/images/prod-red.svg',
-    BASEPATH +  'assets/images/basket-citrus.svg',
-    BASEPATH +  'assets/images/basket-berry.svg',
-    BASEPATH +  'assets/images/basket-green.svg',
-    BASEPATH +  'assets/images/basket-red.svg',
-    BASEPATH +  'assets/images/star.svg',
-    BASEPATH +  'assets/images/nfc-icon.png'
 ];
 
 self.addEventListener('install', function(event) {
@@ -75,7 +56,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(function(cacheNames) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
-          if (cacheName.startsWith('JuiceBoxCache') && CACHE_NAME !== cacheName) {
+          if (cacheName.startsWith('CineCache') && CACHE_NAME !== cacheName) {
             return caches.delete(cacheName);
           }
         })
