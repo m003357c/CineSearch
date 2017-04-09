@@ -74,12 +74,13 @@ $(document).ready(function(){
 		$("#searchBox").addClass("absoluteSearch");
 		setTimeout(function(){
 			google.maps.event.trigger(map, "resize");
-			var marker = new google.maps.Marker({
-			position: userLoc,
-			title: "stoke position",
-			map: map
+				var marker = new google.maps.Marker({
+				position: userLoc,
+				title: "stoke position",
+				map: map,
+				icon: 'assets/images/cinesearch-map-icon.png'
 
-		});
+			});
 		}, 1000);
 		
 	});
