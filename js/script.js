@@ -60,6 +60,13 @@ $(document).ready(function(){
 		});
 	}*/
 	
+	$.getJSON("../document.json", function(data) {
+	    console.log(data);
+	    // data is a JavaScript object now. Handle it as such
+
+	});
+	
+	
 	$('.hamburger').parent().click(function(){
 		$("nav").addClass("is-showing");
 		
@@ -74,35 +81,16 @@ $(document).ready(function(){
 		$("#searchBox").addClass("absoluteSearch");
 		setTimeout(function(){
 			google.maps.event.trigger(map, "resize");
-				var marker = new google.maps.Marker({
+			
+			/*var marker = new google.maps.Marker({
 				position: userLoc,
 				title: "stoke position",
 				map: map,
 				icon: 'assets/images/cinesearch-map-icon.png'
 
-			});
+			});*/
 		}, 1000);
 		
 	});
 	
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
