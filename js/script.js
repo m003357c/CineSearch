@@ -78,6 +78,7 @@ $(document).ready(function(){
 		$("#searchBox").addClass("absoluteSearch");
 	});
 	
+	success();
 	
 });
 
