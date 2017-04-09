@@ -36,12 +36,13 @@ $(document).ready(function(){
 		map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
 		map.setOptions({draggable: true});
 		//create marker
-		/*var marker = new google.maps.Marker({
+		var marker = new google.maps.Marker({
 			position: userLoc,
 			title: "stoke position",
-			map: map
+			map: map,
+			icon: 'http://maps.google.com/mapfiles/ms/micons/blue-pushpin.png'
 
-		});*/
+		});
 	};
 	function error(err) {
 	  console.warn(`ERROR(${err.code}): ${err.message}`);
