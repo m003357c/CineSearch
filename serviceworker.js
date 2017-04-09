@@ -1,4 +1,4 @@
-var CACHE_NAME = 'CineCache';
+/*var CACHE_NAME = 'CineCache';
 var BASEPATH = '/CineSearch/';
 var CACHED_URLS = [
   // Our HTML
@@ -37,7 +37,7 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
-   /* // Handle requests for events JSON file
+  // Handle requests for events JSON file
   } else if (requestURL.pathname === BASE_PATH + 'films.json') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
@@ -62,7 +62,7 @@ self.addEventListener('fetch', function(event) {
           });
         });
       })
-    );*/
+    );
   } else if (
     CACHED_URLS.includes(requestURL.href) ||
     CACHED_URLS.includes(requestURL.pathname)) {
@@ -89,4 +89,4 @@ self.addEventListener('activate', function(event) {
       );
     })
   );
-});
+});*/
