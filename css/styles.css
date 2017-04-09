@@ -176,12 +176,12 @@ nav ul li a{
 	-moz-transform: skewY(6deg);
 	transform: skewY(6deg);
 }
-#mapHolder.tallMap{
+.tallMap{
 	height: calc(100vh - 61px);
 	margin-bottom: 0;
 	transform: none;
 }
-#mapHolder.tallMap #cineMap{
+.tallMap #cineMap{
 	transform: none;
 }
 /*----------------------------------------------*/
