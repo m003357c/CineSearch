@@ -177,8 +177,8 @@ nav ul li a{
 	transform: skewY(6deg);
 }
 #mapHolder.tallMap, .tallMap{
-	height: calc(100vh - 61px);
 	height: calc(100% - 61px);
+	height: calc(100vh - 61px);	
 	margin-bottom: 0;
 	transform: none;
 }
