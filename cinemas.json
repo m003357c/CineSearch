@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Odeon Cinema",
+        "location": "Stoke on Trent",
+        "longitude": "-2.192347",
+        "latitude": "53.025105"
+    },
+    {
+      "name": "Vue Cinema",
+      "location": "Newcastle Under Lyme",
+      "longitude": "-2.226226",
+      "latitude": "53.009975"
+    },
+    {
+      "name": "Cineworld Cinema",
+      "location": "Hanely",
+      "longitude": "-2.177314",
+      "latitude": "53.029418"
+    },
+    {
+      "name": "Film Theatre",
+      "location": "Stoke on Trent",
+      "longitude": " -2.181266",
+      "latitude": "53.009528"
+    }
+]
