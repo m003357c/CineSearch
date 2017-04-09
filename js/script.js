@@ -24,7 +24,6 @@ function success(pos) {
 	var mapOptions = {   
 		zoom: 12,  
 		center: userLoc,
-		scrollwheel: false,
 		zoomControl: true,
 		mapTypeControl: false,
 		scaleControl: true,
