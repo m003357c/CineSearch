@@ -7,6 +7,7 @@ $(document).ready(function(){
 		});
 	}
 	let map;
+	let userLoc;
 	let options = {
 	  enableHighAccuracy: true,
 	  timeout: 5000,
@@ -20,7 +21,7 @@ $(document).ready(function(){
 		let longitude = pos.coords.longitude;
 
 		//latitude and longitude for Mellor building  
-		var userLoc = new google.maps.LatLng(latitude, longitude); 
+		userLoc = new google.maps.LatLng(latitude, longitude); 
 		//set up mapOptions (Zoom = 0 - zoomed out)  
 		var mapOptions = {   
 			zoom: 12,  
@@ -35,14 +36,7 @@ $(document).ready(function(){
 		//create map using mapOptions 
 		map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
 		map.setOptions({draggable: true});
-		//create marker
-		var marker = new google.maps.Marker({
-			position: userLoc,
-			title: "stoke position",
-			map: map,
-			icon: 'http://maps.google.com/mapfiles/ms/micons/blue-pushpin.png'
-
-		});
+		
 	};
 	function error(err) {
 	  console.warn(`ERROR(${err.code}): ${err.message}`);
@@ -80,6 +74,12 @@ $(document).ready(function(){
 		$("#searchBox").addClass("absoluteSearch");
 		setTimeout(function(){
 			google.maps.event.trigger(map, "resize");
+			var marker = new google.maps.Marker({
+			position: userLoc,
+			title: "stoke position",
+			map: map
+
+		});
 		}, 1000);
 		
 	});
