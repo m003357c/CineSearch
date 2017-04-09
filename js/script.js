@@ -72,13 +72,15 @@ $(document).ready(function(){
 	$("nav .close").click(function(){
 		$("nav").removeClass("is-showing");
 	});
-	
+	var currCenter = map.getCenter();
 	$("#searchBox .btn").click(function(){
 		$("#boxOffice").hide();
 		$("#mapHolder, .container").addClass("tallMap");
 		$("#searchBox").addClass("absoluteSearch");
-		setTimeout(function(){
-			google.maps.event.trigger(map, "resize");
+		setTimeout(function(){			
+			google.maps.event.trigger(map, 'resize');
+			map.setCenter(currCenter);
+
 			function addMarker(lat,lng) {
 				var marker = new google.maps.Marker({
 					position: new google.maps.LatLng(lat,lng),
