@@ -176,7 +176,7 @@ nav ul li a{
 	-moz-transform: skewY(6deg);
 	transform: skewY(6deg);
 }
-.tallMap{
+#mapHolder.tallMap, .tallMap{
 	height: calc(100vh - 61px);
 	margin-bottom: 0;
 	transform: none;
