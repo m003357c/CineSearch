@@ -77,8 +77,10 @@ $(document).ready(function(){
 		$("#boxOffice").hide();
 		$("#mapHolder, .container").addClass("tallMap");
 		$("#searchBox").addClass("absoluteSearch");
+		setTimeout(function(){
+			google.maps.event.trigger(map, "resize");
+		}, 1000);
 		
-		google.maps.event.trigger(map, "resize");
 	});
 	
 });
