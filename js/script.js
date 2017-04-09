@@ -71,4 +71,32 @@ $(document).ready(function(){
 	$("nav .close").click(function(){
 		$("nav").removeClass("is-showing");
 	});
+	
+	$("#searchBox .btn").click(function(){
+		$("#boxOffice").hide();
+		$("#mapHolder").addClass("tallMap");
+		$("#searchBox").addClass("absoluteSearch");
+	});
+	
+	
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
