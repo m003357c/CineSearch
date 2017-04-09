@@ -60,7 +60,7 @@ $(document).ready(function(){
 		});
 	}*/
 	
-	$.getJSON("../document.json", function(data) {
+	$.getJSON("cinemas.json", function(data) {
 	    console.log(data);
 	    // data is a JavaScript object now. Handle it as such
 
