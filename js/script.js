@@ -6,12 +6,7 @@ $(document).ready(function(){
 			console.log('Service worker registration failed: ', err);
 		});
 	}
-	
 	let map;
-	
-	
-	
-	
 	let options = {
 	  enableHighAccuracy: true,
 	  timeout: 5000,
@@ -80,7 +75,7 @@ $(document).ready(function(){
 	
 	$("#searchBox .btn").click(function(){
 		$("#boxOffice").hide();
-		$("#mapHolder").addClass("tallMap");
+		$("#mapHolder, .container").addClass("tallMap");
 		$("#searchBox").addClass("absoluteSearch");
 		
 		google.maps.event.trigger(map, "resize");
