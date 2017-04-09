@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	
+$(document).ready(function(){	
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
 			console.log('Service worker registered successfully');
@@ -7,7 +6,12 @@ $(document).ready(function(){
 			console.log('Service worker registration failed: ', err);
 		});
 	}
-
+	
+	let map;
+	
+	
+	
+	
 	let options = {
 	  enableHighAccuracy: true,
 	  timeout: 5000,
@@ -34,7 +38,7 @@ $(document).ready(function(){
 			fullscreenControl: false
 		};    
 		//create map using mapOptions 
-		var map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
+		map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
 		map.setOptions({draggable: true});
 		//create marker
 		/*var marker = new google.maps.Marker({
@@ -78,6 +82,10 @@ $(document).ready(function(){
 		$("#boxOffice").hide();
 		$("#mapHolder").addClass("tallMap");
 		$("#searchBox").addClass("absoluteSearch");
+		
+		var center = map.getCenter();
+		google.maps.event.trigger(map, "resize");
+		map.setCenter(center);
 	});
 	
 	success();
