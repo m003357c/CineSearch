@@ -207,9 +207,15 @@ nav ul li a{
 	position: absolute;
 	bottom: 150px;
 }
-#searchBox h2{
-	color: 	#252839;
+#searchBox label{
+	display: block;
+	color: #252839;
 	margin: 0 0 10px 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 24px;
 }
 .append-form input{
 	margin-right: -5px;	
