@@ -83,7 +83,7 @@ $(document).ready(function(){
 				var marker = new google.maps.Marker({
 					position: new google.maps.LatLng(lat,lng),
 					map: map,
-					icon: "images/mapIcons/red-dot.png"
+					icon: "assets/images/cinesearch-map-icon.png"
 				});
 				markersArray.push(marker);
 			}
