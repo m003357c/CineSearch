@@ -88,8 +88,6 @@ $(document).ready(function(){
 		map.setCenter(center);
 	});
 	
-	success();
-	
 });
 
 
