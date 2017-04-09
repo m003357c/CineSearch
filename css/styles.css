@@ -165,9 +165,9 @@ nav ul li a{
 	-moz-transform: skewY(-6deg);
 	transform: skewY(-6deg);
 	transform-origin: top left;
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+	-webkit-transition: height 1s ease-in-out;
+	-moz-transition: height 1s ease-in-out;
+	transition: height 1s ease-in-out;
 	-webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
