@@ -8,6 +8,8 @@ $(document).ready(function(){
 	}
 	let map;
 	let userLoc;
+	var markersArray = []; 
+	
 	let options = {
 	  enableHighAccuracy: true,
 	  timeout: 5000,
@@ -60,11 +62,7 @@ $(document).ready(function(){
 		});
 	}*/
 	
-	$.getJSON("js/cinemas.json", function(data) {
-	    console.log(data);
-	    // data is a JavaScript object now. Handle it as such
-
-	});
+	
 	
 	
 	$('.hamburger').parent().click(function(){
@@ -81,14 +79,21 @@ $(document).ready(function(){
 		$("#searchBox").addClass("absoluteSearch");
 		setTimeout(function(){
 			google.maps.event.trigger(map, "resize");
+			function addMarker(lat,lng) {
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(lat,lng),
+					map: map,
+					icon: "images/mapIcons/red-dot.png"
+				});
+				markersArray.push(marker);
+			}
+			$.getJSON("js/cinemas.json", function(data) {
+				console.log(data);
+				$.each( data, function( key, val ) {
+					addMarker(val.latitude,val.longitude);
+				})
+			});
 			
-			/*var marker = new google.maps.Marker({
-				position: userLoc,
-				title: "stoke position",
-				map: map,
-				icon: 'assets/images/cinesearch-map-icon.png'
-
-			});*/
 		}, 1000);
 		
 	});
