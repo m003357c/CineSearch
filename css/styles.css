@@ -132,10 +132,13 @@ nav span.close{
 	float: right;
 	
 }
+nav ul{
+	padding-top: 20px;
+}	
 nav ul li {
 	text-transform: uppercase;
 	list-style-type: none;
-	padding: 20px 0 0 20px;
+	padding: 30px 0 0 20px;
 	font-size: 1.7rem;
 }
 nav ul li a{
