@@ -176,6 +176,14 @@ nav ul li a{
 	-moz-transform: skewY(6deg);
 	transform: skewY(6deg);
 }
+#mapHolder.tallMap{
+	height: 100vh;
+	margin-bottom: 0;
+	transform: none;
+}
+#mapHolder.tallMap #cineMap{
+	transform: none;
+}
 /*----------------------------------------------*/
 /*----------------- Search Box -----------------*/
 /*----------------------------------------------*/
@@ -186,6 +194,10 @@ nav ul li a{
 	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
 	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
 }	
+.absoluteSearch{
+	position: absolute;
+	bottom: 30px;
+}
 #searchBox h2{
 	color: 	#252839;
 	margin: 0 0 10px 0;
