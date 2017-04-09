@@ -83,9 +83,7 @@ $(document).ready(function(){
 		$("#mapHolder").addClass("tallMap");
 		$("#searchBox").addClass("absoluteSearch");
 		
-		var center = map.getCenter();
 		google.maps.event.trigger(map, "resize");
-		map.setCenter(center);
 	});
 	
 });
