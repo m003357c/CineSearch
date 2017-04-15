@@ -65,7 +65,7 @@ $(document).ready(function(){
 		$("nav").removeClass("is-showing");
 	});
 	//search functionality and get markers from cinemas.json
-	$("#searchBox .btn").click(function(){
+	function showMap(){
 		$("#boxOffice").hide();
 		$("#mapHolder, .container").addClass("tallMap");
 		$("#searchBox").addClass("absoluteSearch");
@@ -87,9 +87,9 @@ $(document).ready(function(){
 					addMarker(val.latitude,val.longitude);
 				})
 			});			
-		}, 500);
-		
-	});
+		}, 500);	
+	}
+	$("#searchBox .btn, #searchBox .search").click(showMap);
 	
 	//Change search box by searching by film
 	$("body").on("click","a.film-option",function(e) {
