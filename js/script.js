@@ -92,7 +92,17 @@ $(document).ready(function(){
 	});
 	
 	//Change search box by searching by film
-	$(".film-option").click(function(){
+	$(document).on("click",".film-option",function() {
+	   	console.log("click");
+		$(this).addClass("film-search");
+		$("#searchBox form").hide();
+		var filmSearchHTML = "<div class='filmSearch'>" +
+					"<h2>Search Cinemas Showing<br><strong>'" + $(this).child("figcaption").text() + "'</strong></h2>" +
+					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
+				     "</div>";
+		$("#searchBox").append(filmSearchHTML);	
+	});
+	/*$(".film-option").click(function(){
 		console.log("click");
 		$(this).addClass("film-search");
 		$("#searchBox form").hide();
@@ -101,7 +111,7 @@ $(document).ready(function(){
 					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);		
-	});
+	});*/
 	$(".cancel-search").click(function(){
 		$(".filmSearch").remove();
 		$("#searchBox form").show();
