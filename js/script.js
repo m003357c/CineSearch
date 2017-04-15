@@ -45,7 +45,17 @@ $(document).ready(function(){
 	};
 	navigator.geolocation.getCurrentPosition(success, error, options);
 	window.addEventListener('load', success );
-
+	
+	$.getJSON("js/films.json", function(data) {
+		console.log(data);
+		$.each( data, function( key, val ) {
+			var filmOutput = `<figure>
+					  <img src="${films.picture}" alt="${films.name} Movie Poster">
+					  <figcaption>${films.name}</figcaption>
+					  </figure>`;
+			$("#boxOffice").append(filmOutput);
+		})
+	});
 	/*const filmContainer = document.getElementById('boxOffice');
 	if(filmContainer){
 	    fetch("films.json").then(response => {
