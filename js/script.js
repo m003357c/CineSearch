@@ -49,7 +49,7 @@ $(document).ready(function(){
 	//output films from films.json
 	$.getJSON("js/films.json", function(data) {
 		$.each( data, function( key, val ) {
-			var filmOutput = `<a href="#searchBox" class="film-option"><figure>
+			var filmOutput = `<a href="#mapHolder" class="film-option"><figure>
 					  <img src="${val.picture}" alt="${val.name} Movie Poster">
 					  <figcaption>${val.name}</figcaption>
 					  </figure></a>`;
