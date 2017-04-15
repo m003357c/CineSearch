@@ -93,6 +93,7 @@ $(document).ready(function(){
 	
 	//Change search box by searching by film
 	$("#boxOffice figure").click(function(){
+		console.log("click");
 		$(this).addClass("film-search");
 		$("#searchBox form").hide();
 		var filmSearchHTML = "<div class='filmSearch'>" +
