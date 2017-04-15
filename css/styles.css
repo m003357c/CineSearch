@@ -30,7 +30,7 @@ body, nav ul{
 	margin: 0;
 	padding: 0;
 }
-#boxOffice:after{
+#boxOffice:after, .filmSearch p:after{
 	content: "";
 	display: table;
 	clear: both;
@@ -222,6 +222,10 @@ nav ul li a{
 	font-weight: 300;
 	font-size: 24px;
 }
+#searchBox h2 strong{
+	color: #252839;	
+}
+
 .append-form input{
 	margin-right: -5px;	
 	height: 40px;
@@ -259,6 +263,14 @@ a.btn{
 a.btn img{
 	vertical-align: middle;	
 	margin-top: -2px;
+}
+.filmSearch a.btn{
+	display: inline-block;
+	width: auto;
+}
+.filmSearch a.cancel-search{
+	background: #990d03;
+	float: right;
 }
 /*----------------------------------------------*/
 /*----------------- Box Office -----------------*/
