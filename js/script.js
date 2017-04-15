@@ -46,6 +46,7 @@ $(document).ready(function(){
 	navigator.geolocation.getCurrentPosition(success, error, options);
 	window.addEventListener('load', success );
 	
+	//output films from films.json
 	$.getJSON("js/films.json", function(data) {
 		$.each( data, function( key, val ) {
 			var filmOutput = `<figure>
@@ -55,7 +56,7 @@ $(document).ready(function(){
 			$("#boxOffice").append(filmOutput);
 		})
 	});
-	
+	//hamburger navigation
 	$('.hamburger').parent().click(function(){
 		$("nav").addClass("is-showing");
 		
@@ -63,6 +64,7 @@ $(document).ready(function(){
 	$("nav .close").click(function(){
 		$("nav").removeClass("is-showing");
 	});
+	//search functionality and get markers from cinemas.json
 	$("#searchBox .btn").click(function(){
 		$("#boxOffice").hide();
 		$("#mapHolder, .container").addClass("tallMap");
@@ -88,5 +90,46 @@ $(document).ready(function(){
 		}, 500);
 		
 	});
+	
+	//Change search box by searching by film
+	$("#boxOffice figure").click(function(){
+		$(this).addClass("film-search");
+		$("#searchBox form").hide();
+		var filmSearchHTML = "<div class='filmSearch'>" +
+					"<h2>Search Cinemas Showing<br><strong>'" + $(this).child("figcaption").text() + "'</strong></h2>" +
+					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
+				     "</div>";
+		$("#searchBox").append(filmSearchHTML);		
+	});
+	$(".cancel-search").click(function(){
+		$(".filmSearch").remove();
+		$("#searchBox form").show();
+		$("#boxOffice figure.film-search").removeClass("film-search");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 });
