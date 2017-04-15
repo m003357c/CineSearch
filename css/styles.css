@@ -155,9 +155,9 @@ nav ul li a{
 }
 .is-showing{
 	left:0;
-	-webkit-box-shadow: 160px 0px 0px 0px rgba(0,0,0,0.6);
-	-moz-box-shadow: 160px 0px 0px 0px rgba(0,0,0,0.6);
-	box-shadow: 160px 0px 0px 0px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.6);
+	box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.6);
 }
 /*----------------------------------------------*/
 /*----------------- Map Styles -----------------*/
