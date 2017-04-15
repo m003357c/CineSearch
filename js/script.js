@@ -49,10 +49,10 @@ $(document).ready(function(){
 	//output films from films.json
 	$.getJSON("js/films.json", function(data) {
 		$.each( data, function( key, val ) {
-			var filmOutput = `<figure>
+			var filmOutput = `<a href="" class="film-option"><figure>
 					  <img src="${val.picture}" alt="${val.name} Movie Poster">
 					  <figcaption>${val.name}</figcaption>
-					  </figure>`;
+					  </figure></a>`;
 			$("#boxOffice").append(filmOutput);
 		})
 	});
@@ -92,7 +92,7 @@ $(document).ready(function(){
 	});
 	
 	//Change search box by searching by film
-	$("#boxOffice figure").click(function(){
+	$(".film-option").click(function(){
 		console.log("click");
 		$(this).addClass("film-search");
 		$("#searchBox form").hide();
