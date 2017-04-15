@@ -101,14 +101,11 @@ $(document).ready(function(){
 					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
-	});
-	$('body').on('click',"a[href^='#'",function (e) {
+		
 		e.preventDefault();
 		var target = this.hash;
 		$target = $(target);
-		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top
-		}, 900, 'swing', function () {
+		$('html, body').stop().animate({'scrollTop': $target.offset().top}, 900, 'swing', function(){
 			window.location.hash = target;
 		});
 	});
