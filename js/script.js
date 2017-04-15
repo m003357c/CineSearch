@@ -49,7 +49,7 @@ $(document).ready(function(){
 	//output films from films.json
 	$.getJSON("js/films.json", function(data) {
 		$.each( data, function( key, val ) {
-			var filmOutput = `<a href="" class="film-option"><figure>
+			var filmOutput = `<a href="#" class="film-option"><figure>
 					  <img src="${val.picture}" alt="${val.name} Movie Poster">
 					  <figcaption>${val.name}</figcaption>
 					  </figure></a>`;
@@ -92,7 +92,7 @@ $(document).ready(function(){
 	});
 	
 	//Change search box by searching by film
-	$(document).on("click",".film-option",function() {
+	$("body").on("click","a.film-option",function() {
 	   	console.log("click");
 		$(this).addClass("film-search");
 		$("#searchBox form").hide();
@@ -103,22 +103,6 @@ $(document).ready(function(){
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
 	});
-	/*$(".film-option").click(function(){
-		console.log("click");
-		$(this).addClass("film-search");
-		$("#searchBox form").hide();
-		var filmSearchHTML = "<div class='filmSearch'>" +
-					"<h2>Search Cinemas Showing<br><strong>'" + $(this).child("figcaption").text() + "'</strong></h2>" +
-					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
-				     "</div>";
-		$("#searchBox").append(filmSearchHTML);		
-	});*/
-	$(".cancel-search").click(function(){
-		$(".filmSearch").remove();
-		$("#searchBox form").show();
-		$("#boxOffice figure.film-search").removeClass("film-search");
-	});
-	
 	
 	
 	
