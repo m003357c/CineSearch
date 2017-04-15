@@ -102,7 +102,7 @@ $(document).ready(function(){
 		var filmName = $(this).children().children("figcaption").text();
 		var filmSearchHTML = "<div class='filmSearch'>" +
 					"<h2>Cinemas Showing<br><strong>'" + filmName + "'</strong></h2>" +
-					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
+					"<p><a href='#' class='btn search'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
 		
