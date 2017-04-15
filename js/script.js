@@ -93,7 +93,6 @@ $(document).ready(function(){
 	
 	//Change search box by searching by film
 	$("body").on("click","a.film-option",function() {
-	   	console.log("click");
 		$(this).addClass("film-search");
 		$("#searchBox form").hide();
 		var filmName = $(this).children().children("figcaption").text();
@@ -103,7 +102,11 @@ $(document).ready(function(){
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
 	});
-	
+	$("body").on("click","a.cancel-search",function() {
+		$("a.film-search").removeClass("film-search");
+		$("#searchBox form").show();
+		$("#searchBox .filmSearch").remove();	
+	});
 	
 	
 	
