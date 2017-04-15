@@ -212,7 +212,7 @@ nav ul li a{
 	position: absolute;
 	bottom: 150px;
 }
-#searchBox label{
+#searchBox label, #searchBox h2{
 	display: block;
 	color: #252839;
 	margin: 0 0 10px 0;
