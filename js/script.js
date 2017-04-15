@@ -50,8 +50,8 @@ $(document).ready(function(){
 		console.log(data);
 		$.each( data, function( key, val ) {
 			var filmOutput = `<figure>
-					  <img src="${films.picture}" alt="${films.name} Movie Poster">
-					  <figcaption>${films.name}</figcaption>
+					  <img src="${val.picture}" alt="${val.name} Movie Poster">
+					  <figcaption>${val.name}</figcaption>
 					  </figure>`;
 			$("#boxOffice").append(filmOutput);
 		})
