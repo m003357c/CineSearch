@@ -89,7 +89,8 @@ $(document).ready(function(){
 			});			
 		}, 500);	
 	}
-	$("#searchBox .btn, #searchBox .search").click(showMap);
+	$("#searchBox .btn").click(showMap);
+	$("body").on("click","a.search",showMap);
 	
 	//Change search box by searching by film
 	$("body").on("click","a.film-option",function(e) {
