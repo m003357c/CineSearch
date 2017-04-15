@@ -93,8 +93,11 @@ $(document).ready(function(){
 	
 	//Change search box by searching by film
 	$("body").on("click","a.film-option",function(e) {
-		$(this).addClass("film-search");
 		$("#searchBox .filmSearch").remove();	
+		if($("a.film-search").hasClass("film-search")){
+			$("a.film-search").removeClass("film-search")	
+		}
+		$(this).addClass("film-search");
 		$("#searchBox form").hide();
 		var filmName = $(this).children().children("figcaption").text();
 		var filmSearchHTML = "<div class='filmSearch'>" +
