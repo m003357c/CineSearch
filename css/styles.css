@@ -145,6 +145,7 @@ nav ul li {
 	list-style-type: none;
 	padding: 30px 0 0 20px;
 	font-size: 1.7rem;
+	width: 0;
 }
 nav ul li a{
 	color: #252839;
@@ -155,6 +156,9 @@ nav ul li a{
 }
 .is-showing{
 	width: 60%;	
+}
+.is-showing li{
+	width: 100%;	
 }
 /*----------------------------------------------*/
 /*----------------- Map Styles -----------------*/
