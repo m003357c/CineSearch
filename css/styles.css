@@ -264,11 +264,11 @@ a.btn img{
 	vertical-align: middle;	
 	margin-top: -2px;
 }
-.filmSearch a.btn{
+#searchBox .filmSearch a.btn{
 	display: inline-block;
 	width: auto;
 }
-.filmSearch a.cancel-search{
+#searchBox .filmSearch a.cancel-search{
 	background: #990d03;
 	float: right;
 }
