@@ -102,7 +102,7 @@ $(document).ready(function(){
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
 	});
-	$('a[href^="#"]').on('click',function (e) {
+	$('body').on('click',"a[href^='#'",function (e) {
 		e.preventDefault();
 		var target = this.hash;
 		$target = $(target);
