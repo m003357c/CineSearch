@@ -47,7 +47,6 @@ $(document).ready(function(){
 	window.addEventListener('load', success );
 	
 	$.getJSON("js/films.json", function(data) {
-		console.log(data);
 		$.each( data, function( key, val ) {
 			var filmOutput = `<figure>
 					  <img src="${val.picture}" alt="${val.name} Movie Poster">
@@ -56,24 +55,6 @@ $(document).ready(function(){
 			$("#boxOffice").append(filmOutput);
 		})
 	});
-	/*const filmContainer = document.getElementById('boxOffice');
-	if(filmContainer){
-	    fetch("films.json").then(response => {
-		    return response.json();
-		}).then(films => {
-			const filmsHTML = films.map(event => {
-				return `<figure>
-					  <img src="${films.picture}" alt="${films.name} Movie Poster">
-					  <figcaption>${films.name}</figcaption>
-					</figure>`;
-			}).join("\n");
-
-		    filmContainer.innerHTML = filmsHTML;
-		});
-	}*/
-	
-	
-	
 	
 	$('.hamburger').parent().click(function(){
 		$("nav").addClass("is-showing");
@@ -100,12 +81,10 @@ $(document).ready(function(){
 				markersArray.push(marker);
 			}
 			$.getJSON("js/cinemas.json", function(data) {
-				console.log(data);
 				$.each( data, function( key, val ) {
 					addMarker(val.latitude,val.longitude);
 				})
-			});
-			
+			});			
 		}, 500);
 		
 	});
