@@ -307,12 +307,12 @@ figure img{
 figcaption{
 	font-size: 12px;	
 }
-.film-search{
+.film-search figure{
 	-webkit-box-shadow: 0px 0px 8px 0px rgba(242,182,50,0.6);
 	-moz-box-shadow: 0px 0px 8px 0px rgba(242,182,50,0.6);
 	box-shadow: 0px 0px 8px 0px rgba(242,182,50,0.6);
 }
-.film-search img{
+.film-search figure img{
 	-webkit-transform: scale(1.02);	
 	-moz-transform: scale(1.02);	
 	transform: scale(1.02);	
