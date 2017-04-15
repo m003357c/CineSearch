@@ -96,9 +96,9 @@ $(document).ready(function(){
 	   	console.log("click");
 		$(this).addClass("film-search");
 		$("#searchBox form").hide();
-		var filmName = $(this).children("figcaption").text();
+		var filmName = $(this).children().children("figcaption").text();
 		var filmSearchHTML = "<div class='filmSearch'>" +
-					"<h2>Search Cinemas Showing<br><strong>'" + filmName + "'</strong></h2>" +
+					"<h2>Cinemas Showing<br><strong>'" + filmName + "'</strong></h2>" +
 					"<p><a href='#' class='btn'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
