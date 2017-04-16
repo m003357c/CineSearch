@@ -151,6 +151,7 @@ $(document).ready(function(){
 	
 	
 	$("body").on("click","a.viewing-times-link",function() {
+		$("#filmTimes").show();
 		var request = new XMLHttpRequest();
 		request.open('GET', 'js/films.json', true);
 		request.onload = function() {
@@ -162,7 +163,7 @@ $(document).ready(function(){
 						//output film times to page
 						var filmTimes = '';
 						
-						$("#filmTimes").append(filmTimes);
+						$(".film-list").append(filmTimes);
 					})(data[i]);
 				}			  
 			} else {			    
