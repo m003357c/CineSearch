@@ -112,7 +112,7 @@ $(document).ready(function(){
 					for (var i = 0; i < data.length; i++) {
 						(function (cinemasInfo) {
 							var marker = new google.maps.Marker({
-								position: new google.maps.LatLng(data.latitude,data.longitude);,
+								position: new google.maps.LatLng(data.latitude,data.longitude),
 								map: map,
 								icon: "assets/images/cinesearch-map-icon.png"
 							});
