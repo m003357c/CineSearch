@@ -75,18 +75,23 @@ $(document).ready(function(){
 			google.maps.event.trigger(map, "resize");
 			map.setCenter(center);
 
-			function addMarker(lat,lng) {
+			/*function addMarker(lat,lng) {
 				marker = new google.maps.Marker({
 					position: new google.maps.LatLng(lat,lng),
 					map: map,
 					icon: "assets/images/cinesearch-map-icon.png"
 				});
 				markersArray.push(marker);
-			}
+			}*/
 			$.getJSON("js/cinemas.json", function(data) {
 				$.each( data, function( key, val ) {
-					addMarker(val.latitude,val.longitude);
-					
+					//addMarker(val.latitude,val.longitude);
+					var latLng = new google.maps.LatLng(val.latitude,val.longitude);
+					var itemMarker = new google.maps.Marker({
+					    position: latLng,
+					    map: map,
+					    title: results.features[index].name
+					});
 					var contentString = '<h1>' + val.name +'</h1>'+
 					    '<p>' + val.location +'<em>' + val.address + '</em></p>' +
 					    '<a href="#">Viewing Times</a>';
