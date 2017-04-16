@@ -120,8 +120,8 @@ $(document).ready(function(){
 								visible: true
 							});
 							
-							var contentString = '<h1>' + data.name +'</h1>'+
-									    '<p>' + data.location +'<em> ' + data.address + '</em></p>' +
+							var contentString = '<h1>' + cinema.name +'</h1>'+
+									    '<p>' + cinema.location +'<em> ' + cinema.address + '</em></p>' +
 									    '<a href="#" class="viewing-times-link">Viewing Times</a>';
 
 							//create info window
