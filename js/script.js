@@ -119,8 +119,8 @@ $(document).ready(function(){
 								icon: "assets/images/cinesearch-map-icon.png",
 								visible: true
 							});
-							markersArray.push(marker);
-							/*var contentString = '<h1>' + data.name +'</h1>'+
+							
+							var contentString = '<h1>' + data.name +'</h1>'+
 									    '<p>' + data.location +'<em> ' + data.address + '</em></p>' +
 									    '<a href="#" class="viewing-times-link">Viewing Times</a>';
 
@@ -132,8 +132,8 @@ $(document).ready(function(){
 							//register for click events on info window
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.open(map, marker);
-							});*/
-							
+							});
+							markersArray.push(marker);
 						})(data[i]);
 					}			  
 				} else {
