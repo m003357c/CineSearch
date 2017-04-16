@@ -109,6 +109,7 @@ $(document).ready(function(){
 				if (request.status >= 200 && request.status < 400) {
 					// Success!
 					var data = JSON.parse(request.responseText);
+					console.log(data);
 					for (var i = 0; i < data.length; i++) {
 						(function (cinemasInfo) {
 							var marker = new google.maps.Marker({
@@ -129,16 +130,19 @@ $(document).ready(function(){
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.open(map, marker);
 							});
+							markers.push(marker);
 						})(data[i]);
 					}			  
 				} else {
 				    // We reached our target server, but it returned an error
+					console.log("Error returned");
 
 				}
 			};
 
 			request.onerror = function() {
 			  // There was a connection error of some sort
+				console.log("Complete Error");
 			};
 			request.send();
 		}, 500);	
