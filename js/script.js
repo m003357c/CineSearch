@@ -10,6 +10,10 @@ $(document).ready(function(){
 	let userLoc;
 	var markersArray = []; 
 	var marker;
+	var infobox = new InfoBox({
+	      content: ''
+	});
+
 	
 	let options = {
 		enableHighAccuracy: true,
@@ -120,18 +124,21 @@ $(document).ready(function(){
 								visible: true
 							});
 							
-							var contentString = '<h1>' + cinema.name +'</h1>'+
+							/*var contentString = '<h1>' + cinema.name +'</h1>'+
 									    '<p>' + cinema.location +'<em> ' + cinema.address + '</em></p>' +
-									    '<a href="#" class="viewing-times-link">Viewing Times</a>';
+									    '<a href="#" class="viewing-times-link">Viewing Times</a>';*/
 
 							//create info window
-							var infoWindow = new google.maps.InfoWindow({
+							/*var infoWindow = new google.maps.InfoWindow({
 								content: contentString
-							});
+							});*/
 
 							//register for click events on info window
 							google.maps.event.addListener(marker, 'click', function() { 
-								infoWindow.open(map, marker);
+								infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
+										      '<p>' + cinema.location +'<em> ' + cinema.address + '</em></p>' +
+										      '<a href="#" class="viewing-times-link">Viewing Times</a>');
+								infoWindow.open(map, this);
 							});
 							markersArray.push(marker);
 						})(data[i]);
