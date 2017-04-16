@@ -112,7 +112,7 @@ $(document).ready(function(){
 					console.log(data);
 					for (var i = 0; i < data.length; i++) {
 						(function (cinemasInfo) {
-							console.log(data[i]);
+							console.log(data.latitude,data.longitude);
 							marker = new google.maps.Marker({
 								position: new google.maps.LatLng(data.latitude,data.longitude),
 								map: map,
