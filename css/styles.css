@@ -329,8 +329,16 @@ figcaption{
 	margin-top: 0;
 }
 
-
-
+@media all and (orientation: portrait) { 
+	.film-list-land{
+		display: none;
+	}	
+}
+@media all and (orientation: landscape) { 
+	.film-list-port{
+		display: none;
+	}	
+}
 
 
 
