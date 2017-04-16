@@ -450,6 +450,14 @@ figcaption{
 		padding: 0 10px;
 		box-sizing: border-box;
 	}
+	th{
+		color: #fff;
+		text-align: left;
+		margin-right: 10px;
+	}
+	td{
+		margin-right: 10px;	
+	}
 }
 
 
