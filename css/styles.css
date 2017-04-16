@@ -460,13 +460,15 @@ figcaption{
 	}	
 	.date-controls{
 		text-transform: normal;
-		border: 1px solid rgba(255,255,255,0.7);
+		border: 1px solid rgba(255,255,255,0.2);
 		border-bottom: none;
+		margin-right: 20px;	
+		opacity: 0.2;
 	}
 	.date-controls.active{
-		text-transform: normal;
-		border-color: #fff;
-		border-bottom: 1px solid #252839;
+		text-transform: none;
+		border-bottom: 3px solid #252839;
+		opacity: 1;
 	}
 	tr{
 		margin-bottom: 20px;
