@@ -99,7 +99,7 @@ $(document).ready(function(){
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
 										      '<p>' + cinema.location +'<em> ' + cinema.address + '</em></p>' +
-										      '<a href="#" class="viewing-times-link">Viewing Times</a>');
+										      '<a href="#" class="btn viewing-times-link">Viewing Times</a>');
 								infoWindow.open(map, this);
 							});
 							markersArray.push(marker);
