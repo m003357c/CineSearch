@@ -116,8 +116,8 @@ $(document).ready(function(){
 								map: map,
 								icon: "assets/images/cinesearch-map-icon.png"
 							});
-							var contentString = '<h1>' + val.name +'</h1>'+
-									    '<p>' + val.location +'<em>' + val.address + '</em></p>' +
+							var contentString = '<h1>' + data.name +'</h1>'+
+									    '<p>' + data.location +'<em> ' + data.address + '</em></p>' +
 									    '<a href="#" class="viewing-times-link">Viewing Times</a>';
 
 							//create info window
