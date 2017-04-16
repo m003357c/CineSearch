@@ -77,34 +77,7 @@ $(document).ready(function(){
 			var center = map.getCenter();
 			google.maps.event.trigger(map, "resize");
 			map.setCenter(center);
-
-			/*function addMarker(lat,lng) {
-				marker = new google.maps.Marker({
-					position: new google.maps.LatLng(lat,lng),
-					map: map,
-					icon: "assets/images/cinesearch-map-icon.png"
-				});
-				markersArray.push(marker);
-			}*/
-			/*$.getJSON("js/cinemas.json", function(data) {
-				$.each( data, function( key, val ) {
-					addMarker(val.latitude,val.longitude);
-					var contentString = '<h1>' + val.name +'</h1>'+
-					    '<p>' + val.location +'<em>' + val.address + '</em></p>' +
-					    '<a href="#">Viewing Times</a>';
-
-					//create info window
-					var infoWindow = new google.maps.InfoWindow({
-					    content: contentString
-					});
-
-					//register for click events on info window
-					google.maps.event.addListener(marker, 'click', function() { 
-						infoWindow.open(map, marker);
-					});
-
-				})
-			});*/
+			
 			var request = new XMLHttpRequest();
 			request.open('GET', 'js/cinemas.json', true);
 
@@ -122,16 +95,6 @@ $(document).ready(function(){
 								icon: "assets/images/cinesearch-map-icon.png",
 								visible: true
 							});
-							
-							/*var contentString = '<h1>' + cinema.name +'</h1>'+
-									    '<p>' + cinema.location +'<em> ' + cinema.address + '</em></p>' +
-									    '<a href="#" class="viewing-times-link">Viewing Times</a>';*/
-
-							//create info window
-							/*var infoWindow = new google.maps.InfoWindow({
-								content: contentString
-							});*/
-
 							//register for click events on info window
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
@@ -150,7 +113,7 @@ $(document).ready(function(){
 			};
 
 			request.onerror = function() {
-			  // There was a connection error of some sort
+				// There was a connection error of some sort
 				console.log("Complete Error");
 			};
 			request.send();
