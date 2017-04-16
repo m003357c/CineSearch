@@ -397,7 +397,8 @@ figcaption{
 	margin: 0;
 	padding: 0;
 }
-.film-times li{
+.film-times li.dropdown{
+	position: relative;
 	list-style-type: none;
 	text-align: center;
 }
@@ -412,6 +413,13 @@ figcaption{
 }
 .film-times .dropdown-menu{
 	display: none;	
+	position: absolute;
+	width: 100%;
+	background: #fff;
+}
+.film-times .dropdown-menu li{
+	color: #252839;
+	margin-bottom: 5px;
 }
 @media all and (orientation: portrait) { 
 	.film-list-land{
