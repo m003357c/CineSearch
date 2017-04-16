@@ -329,6 +329,10 @@ figcaption{
 .gm-style-iw p{
 	margin-top: 0;
 }
+#filmTimes h2, #filmTimes h2 small, .film-times p,
+.film-times li, .film-times li a{
+	color: #fff;
+}
 #filmTimes{
 	background: #252839;
 	padding: 25px 20px;
@@ -341,9 +345,8 @@ figcaption{
 	z-index: 9000;
 }
 #filmTimes h2{
-	font-size: 1rem;
-	color: #fff;
-}	
+	font-size: 1.08rem;
+}		
 #filmTimes .btn-close{
 	position: absolute;
 	top: -20px;
@@ -379,7 +382,6 @@ figcaption{
 .film-times p{
 	margin: 15px 0;
 	font-size: 1rem;
-	color: #fff;
 	text-align: center;
 }
 .film-times p a{
@@ -397,12 +399,10 @@ figcaption{
 }
 .film-times li{
 	list-style-type: none;
-	color: #fff;
 	text-align: center;
 }
 .film-times li a{
 	text-decoration: none;
-	color: #fff;
 	text-align: center;
 	border: 1px solid #fff;
 	padding: 5px 0;
