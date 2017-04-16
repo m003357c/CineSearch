@@ -294,10 +294,10 @@ figure{
 	float: left;
 	overflow: hidden;
 }	
-figure:nth-child(odd){
+#boxOffice a:nth-child(odd) figure{
 	padding-right: 10px;
 }
-figure:nth-child(even){
+#boxOffice a:nth-child(even) figure{
 	padding-left: 10px;
 }
 figure img{
