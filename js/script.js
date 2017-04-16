@@ -9,6 +9,7 @@ $(document).ready(function(){
 	let map;
 	let userLoc;
 	var markersArray = []; 
+	var marker;
 	
 	let options = {
 	  enableHighAccuracy: true,
@@ -75,7 +76,7 @@ $(document).ready(function(){
 			map.setCenter(center);
 
 			function addMarker(lat,lng) {
-				var marker = new google.maps.Marker({
+				marker = new google.maps.Marker({
 					position: new google.maps.LatLng(lat,lng),
 					map: map,
 					icon: "assets/images/cinesearch-map-icon.png"
