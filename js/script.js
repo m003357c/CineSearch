@@ -9,7 +9,7 @@ $(document).ready(function(){
 	let map;
 	let userLoc;
 	var markersArray = []; 
-	var marker;
+	//var marker;
 	
 	let options = {
 	  enableHighAccuracy: true,
@@ -75,16 +75,15 @@ $(document).ready(function(){
 			google.maps.event.trigger(map, "resize");
 			map.setCenter(center);
 
-			function addMarker(lat,lng) {
+			/*function addMarker(lat,lng) {
 				marker = new google.maps.Marker({
 					position: new google.maps.LatLng(lat,lng),
 					map: map,
 					icon: "assets/images/cinesearch-map-icon.png"
 				});
 				markersArray.push(marker);
-			}
-			$.getJSON("js/cinemas.json", function(data) {
-				console.log(data);
+			}*/
+			/*$.getJSON("js/cinemas.json", function(data) {
 				$.each( data, function( key, val ) {
 					addMarker(val.latitude,val.longitude);
 					var contentString = '<h1>' + val.name +'</h1>'+
@@ -102,7 +101,46 @@ $(document).ready(function(){
 					});
 
 				})
-			});			
+			});*/
+			var request = new XMLHttpRequest();
+			request.open('GET', 'js/cinemas.json', true);
+
+			request.onload = function() {
+				if (request.status >= 200 && request.status < 400) {
+					// Success!
+					var data = JSON.parse(request.responseText);
+					for (var i = 0; i < data.length; i++) {
+						(function (cinemasInfo) {
+							var marker = new google.maps.Marker({
+								position: new google.maps.LatLng(data.latitude,data.longitude);,
+								map: map,
+								icon: "assets/images/cinesearch-map-icon.png"
+							});
+							var contentString = '<h1>' + val.name +'</h1>'+
+									    '<p>' + val.location +'<em>' + val.address + '</em></p>' +
+									    '<a href="#" class="viewing-times-link">Viewing Times</a>';
+
+							//create info window
+							var infoWindow = new google.maps.InfoWindow({
+								content: contentString
+							});
+
+							//register for click events on info window
+							google.maps.event.addListener(marker, 'click', function() { 
+								infoWindow.open(map, marker);
+							});
+						})(data[i]);
+					}			  
+				} else {
+				    // We reached our target server, but it returned an error
+
+				}
+			};
+
+			request.onerror = function() {
+			  // There was a connection error of some sort
+			};
+			request.send();
 		}, 500);	
 	}
 	$("#searchBox .btn").click(showMap);
