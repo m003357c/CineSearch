@@ -2,24 +2,28 @@
     {
         "name": "Odeon Cinema",
         "location": "Stoke on Trent",
+        "address": "Etruria Rd, ST1 5SN",
         "longitude": "-2.192347",
         "latitude": "53.025105"
     },
     {
       "name": "Vue Cinema",
       "location": "Newcastle Under Lyme",
+      "address": "High Street, ST5 1PT",
       "longitude": "-2.226226",
       "latitude": "53.009975"
     },
     {
       "name": "Cineworld Cinema",
-      "location": "Hanely",
+      "location": "Stoke on Trent",
+      "address": "Quadrant Rd, ST1 1PS",
       "longitude": "-2.177314",
       "latitude": "53.029418"
     },
     {
       "name": "Film Theatre",
       "location": "Stoke on Trent",
+      "address": "College Rd, ST4 2EF",
       "longitude": " -2.181266",
       "latitude": "53.009528"
     }
