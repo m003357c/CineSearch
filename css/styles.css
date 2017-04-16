@@ -450,6 +450,9 @@ figcaption{
 		padding: 0 10px;
 		box-sizing: border-box;
 	}
+	tr{
+		margin-bottom: 20px;
+	}	
 	th{
 		color: #fff;
 		text-align: left;
