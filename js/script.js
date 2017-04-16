@@ -10,10 +10,9 @@ $(document).ready(function(){
 	let userLoc;
 	var markersArray = []; 
 	var marker;
-	var infobox = new InfoBox({
-	      content: ''
-	});
-
+	var infoWindow = new google.maps.InfoWindow({
+				content: ''
+			 });
 	
 	let options = {
 		enableHighAccuracy: true,
