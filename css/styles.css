@@ -437,6 +437,11 @@ figcaption{
 	.film-list-port{
 		display: none;
 	}	
+	#filmTimes h2 {
+	    font-size: 1.5rem;
+	    text-align: left;
+	    margin-top: 0;
+	}
 	.film-thumb{
 		width: 30%;
 		float: left;
