@@ -30,7 +30,7 @@ body, nav ul{
 	margin: 0;
 	padding: 0;
 }
-#boxOffice:after, .filmSearch p:after{
+#boxOffice:after, .filmSearch p:after, .film-list-port:after, .film-list-land:after{
 	content: "";
 	display: table;
 	clear: both;
@@ -338,7 +338,21 @@ figcaption{
 	right: 20px;
 	height: calc(100vh - 100px);
 	z-index: 9000;
+}
+#filmTimes h2{
+	font-size: 1rem;
+	color: #fff;
 }	
+.film-thumb{
+	width: 40%;
+	float: left;
+}
+.film-times{
+	width: 60%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
 @media all and (orientation: portrait) { 
 	.film-list-land{
 		display: none;
