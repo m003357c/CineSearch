@@ -455,6 +455,19 @@ figcaption{
 		padding: 0 10px;
 		box-sizing: border-box;
 	}
+	.film-times p{
+		border-bottom: 1px solid rgba(255,255,255,0.7);
+	}	
+	.date-controls{
+		text-transform: normal;
+		border: 1px solid rgba(255,255,255,0.7);
+		border-bottom: none;
+	}
+	.date-controls.active{
+		text-transform: normal;
+		border-color: #fff;
+		border-bottom: 1px solid #252839;
+	}
 	tr{
 		margin-bottom: 20px;
 	}	
