@@ -88,9 +88,9 @@ $(document).ready(function(){
 					//addMarker(val.latitude,val.longitude);
 					var latLng = new google.maps.LatLng(val.latitude,val.longitude);
 					var itemMarker = new google.maps.Marker({
-					    position: latLng,
-					    map: map,
-					    title: results.features[index].name
+					    	position: latLng,
+						map: map,
+						icon: "assets/images/cinesearch-map-icon.png"
 					});
 					var contentString = '<h1>' + val.name +'</h1>'+
 					    '<p>' + val.location +'<em>' + val.address + '</em></p>' +
