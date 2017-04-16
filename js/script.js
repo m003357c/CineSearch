@@ -109,14 +109,15 @@ $(document).ready(function(){
 				if (request.status >= 200 && request.status < 400) {
 					// Success!
 					var data = JSON.parse(request.responseText);
-					console.log(data);
+					console.log(data.length);
 					for (var i = 0; i < data.length; i++) {
-						(function (cinemasInfo) {
-							console.log(data.latitude,data.longitude);
+						(function (cinema) {
+							console.log(cinema.latitude,cinema.longitude);
 							marker = new google.maps.Marker({
-								position: new google.maps.LatLng(data.latitude,data.longitude),
+								position: new google.maps.LatLng(cinema.latitude,cinema.longitude),
 								map: map,
-								icon: "assets/images/cinesearch-map-icon.png"
+								icon: "assets/images/cinesearch-map-icon.png",
+								visible: true
 							});
 							markersArray.push(marker);
 							/*var contentString = '<h1>' + data.name +'</h1>'+
