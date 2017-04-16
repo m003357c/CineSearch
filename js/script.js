@@ -9,12 +9,12 @@ $(document).ready(function(){
 	let map;
 	let userLoc;
 	var markersArray = []; 
-	//var marker;
+	var marker;
 	
 	let options = {
-	  enableHighAccuracy: true,
-	  timeout: 5000,
-	  maximumAge: 0
+		enableHighAccuracy: true,
+		timeout: 5000,
+		maximumAge: 0
 	};
 	function success(pos) {	
 		if (document.getElementById( 'cineMap' ) === null) {
@@ -113,11 +113,12 @@ $(document).ready(function(){
 					for (var i = 0; i < data.length; i++) {
 						(function (cinemasInfo) {
 							console.log(data[i]);
-							var marker = new google.maps.Marker({
+							marker = new google.maps.Marker({
 								position: new google.maps.LatLng(data.latitude,data.longitude),
 								map: map,
 								icon: "assets/images/cinesearch-map-icon.png"
 							});
+							markersArray.push(marker);
 							/*var contentString = '<h1>' + data.name +'</h1>'+
 									    '<p>' + data.location +'<em> ' + data.address + '</em></p>' +
 									    '<a href="#" class="viewing-times-link">Viewing Times</a>';
@@ -131,7 +132,7 @@ $(document).ready(function(){
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.open(map, marker);
 							});*/
-							markersArray.push(marker);
+							
 						})(data[i]);
 					}			  
 				} else {
