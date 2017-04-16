@@ -347,11 +347,35 @@ figcaption{
 	width: 40%;
 	float: left;
 }
+.film-thumb img{
+	max-width: 100%;
+}
 .film-times{
 	width: 60%;
 	float: left;
 	padding: 10px;
 	box-sizing: border-box;
+}
+.film-times h5{
+	margin: 0;
+	font-size: 1rem;
+}	
+.film-times p{
+	margin: 20px 0;
+	font-size: 1rem;
+}
+.film-times ul{
+	margin: 0;
+	padding: 0;
+}
+.film-times li{
+	list-style-type: none;
+}
+.film-times li a{
+	text-decoration: none;
+}
+.film-times .dropdown-menu{
+	display: none;	
 }
 @media all and (orientation: portrait) { 
 	.film-list-land{
