@@ -336,6 +336,7 @@ figcaption{
 	left: 20px;
 	right: 20px;
 	height: calc(100vh - 78px);
+	z-index: 9000;
 }	
 @media all and (orientation: portrait) { 
 	.film-list-land{
