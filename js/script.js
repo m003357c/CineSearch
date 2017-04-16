@@ -136,7 +136,6 @@ $(document).ready(function(){
 					"<p><a href='#' class='btn search'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
-		
 		e.preventDefault();
 		var target = this.hash;
 		$target = $(target);
@@ -150,6 +149,31 @@ $(document).ready(function(){
 		$("#searchBox .filmSearch").remove();	
 	});
 	
+	
+	$("body").on("click","a.viewing-times-link",function() {
+		var request = new XMLHttpRequest();
+		request.open('GET', 'js/films.json', true);
+		request.onload = function() {
+			if (request.status >= 200 && request.status < 400) {
+				// Success!
+				var data = JSON.parse(request.responseText);
+				for (var i = 0; i < data.length; i++) {
+					(function (film) {
+						//output film times to page
+						var filmTimes = '';
+						
+						$("#filmTimes").append(filmTimes);
+					})(data[i]);
+				}			  
+			} else {			    
+				console.log("Error returned");
+			}
+		};
+		request.onerror = function() {
+			console.log("Complete Error");
+		};
+		request.send();
+	});
 	
 	
 	
