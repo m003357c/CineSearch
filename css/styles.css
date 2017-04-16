@@ -251,6 +251,7 @@ a.btn{
 	padding: 5px;
     	box-sizing: border-box;
 	text-decoration: none;
+	display: inline-block;
 }
 #searchBox a.btn{
 	float: left;
