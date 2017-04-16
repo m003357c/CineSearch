@@ -85,6 +85,21 @@ $(document).ready(function(){
 			$.getJSON("js/cinemas.json", function(data) {
 				$.each( data, function( key, val ) {
 					addMarker(val.latitude,val.longitude);
+					
+					var contentString = '<h1>' + val.name +'</h1>'+
+					    '<p>' + val.location +'<em>' + val.address + '</em></p>' +
+					    '<a href="#">Viewing Times</a>';
+
+					//create info window
+					var infoWindow = new google.maps.InfoWindow({
+					    content: contentString
+					});
+
+					//register for click events on info window
+					google.maps.event.addListener(marker, 'click', function() { 
+						infoWindow.open(map, marker);
+					});
+
 				})
 			});			
 		}, 500);	
