@@ -130,7 +130,7 @@ $(document).ready(function(){
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.open(map, marker);
 							});
-							markers.push(marker);
+							markersArray.push(marker);
 						})(data[i]);
 					}			  
 				} else {
