@@ -30,7 +30,8 @@ body, nav ul{
 	margin: 0;
 	padding: 0;
 }
-#boxOffice:after, .filmSearch p:after, .film-list-port:after, .film-list-land:after{
+#boxOffice:after, .filmSearch p:after, .film-list-port:after,
+.film-list-land:after, .film-times p:after{
 	content: "";
 	display: table;
 	clear: both;
@@ -338,10 +339,27 @@ figcaption{
 	right: 20px;
 	height: calc(100vh - 100px);
 	z-index: 9000;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 #filmTimes h2{
 	font-size: 1rem;
 	color: #fff;
+}	
+#filmTimes .btn-close{
+	position: absolute;
+	top: -20px;
+	right: -13px;
+	font-size: 1.3rem;
+	background: #f2b632;
+	color: #252839;
+	line-height: 1;
+	padding: 19px 14px;
+	border-radius: 100%;
+	text-transform: uppercase;
+	-webkit-transform: scaleY(0.7);
+	-moz-transform: scaleY(0.7);
+	transform: scaleY(0.7);
 }	
 .film-thumb{
 	width: 40%;
@@ -363,6 +381,14 @@ figcaption{
 .film-times p{
 	margin: 20px 0;
 	font-size: 1rem;
+	color: #fff;
+	text-align: center;
+}
+.film-times p a{
+	float: left;	
+}
+.film-times p a:last-child{
+	float: right;	
 }
 .film-times ul{
 	margin: 0;
@@ -370,9 +396,11 @@ figcaption{
 }
 .film-times li{
 	list-style-type: none;
+	color: #fff;
 }
 .film-times li a{
 	text-decoration: none;
+	color: #fff;
 }
 .film-times .dropdown-menu{
 	display: none;	
