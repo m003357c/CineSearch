@@ -467,9 +467,10 @@ figcaption{
 		color: #fff;
 		text-decoration: none;
 		font-size: 0.8rem;
+		padding: 5px 20px
 	}
 	.date-controls.active{
-		border-bottom: 3px solid #252839;
+		border-bottom: 1px solid #252839;
 		opacity: 1;
 	}
 	tr{
