@@ -84,6 +84,7 @@ $(document).ready(function(){
 				markersArray.push(marker);
 			}
 			$.getJSON("js/cinemas.json", function(data) {
+				console.log(data);
 				$.each( data, function( key, val ) {
 					addMarker(val.latitude,val.longitude);
 					var contentString = '<h1>' + val.name +'</h1>'+
