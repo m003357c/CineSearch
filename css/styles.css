@@ -328,7 +328,15 @@ figcaption{
 .gm-style-iw p{
 	margin-top: 0;
 }
-
+#filmTimes{
+	padding: 25px 20px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 78px;
+	left: 20px;
+	right: 20px;
+	height: calc(100vh - 78px);
+}	
 @media all and (orientation: portrait) { 
 	.film-list-land{
 		display: none;
