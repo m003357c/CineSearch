@@ -339,8 +339,6 @@ figcaption{
 	right: 20px;
 	height: calc(100vh - 100px);
 	z-index: 9000;
-	overflow-x: hidden;
-	overflow-y: scroll;
 }
 #filmTimes h2{
 	font-size: 1rem;
@@ -386,6 +384,8 @@ figcaption{
 }
 .film-times p a{
 	float: left;	
+	vertical-align: middle;
+	border: 1px solid #fff;
 }
 .film-times p a:last-child{
 	float: right;	
@@ -397,10 +397,15 @@ figcaption{
 .film-times li{
 	list-style-type: none;
 	color: #fff;
+	text-align: center;
 }
 .film-times li a{
 	text-decoration: none;
 	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 5px 0;
+	box-sizing: border-box;
 }
 .film-times .dropdown-menu{
 	display: none;	
