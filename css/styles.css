@@ -80,6 +80,9 @@ header{
 	vertical-align: middle;
 	opacity: 0;
 }
+.is-showing{
+	opacity: 1;
+}	
 .top-bar li:nth-child(1), .top-bar li:nth-child(3){
 	width:10%;
 	height: 21px;
