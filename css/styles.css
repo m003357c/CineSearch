@@ -80,7 +80,7 @@ header{
 	vertical-align: middle;
 	opacity: 0;
 }
-.is-showing{
+.top-bar ul li img.is-showing{
 	opacity: 1;
 }	
 .top-bar li:nth-child(1), .top-bar li:nth-child(3){
