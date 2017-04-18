@@ -193,29 +193,29 @@ $(document).ready(function(){
 									  '<div class="film-out">' +
 										  '<h2>CineWorld - <small>Stoke on Trent</small></h2>' +
 										  '<div class="film-thumb">' +
-											'<img src="assets/images/fantastic-thumb.jpg"/>' +
+											'<img src="' + film.picture + '"/>' +
 										  '</div>' +
 										  '<div class="film-times">' +
-											'<h5>Fantastic Beasts</h5>' +
+											'<h5>' + film.name + '</h5>' +
 											'<p><a href="#" class="btn date-change">&lt;</a>Today<a href="#" class="btn date-change">&gt;</a></p>' +
 											'<ul>' +
 												'<li class="dropdown">' +
 													'<a href="#">3D</a>' +
 													'<ul class="dropdown-menu">' +
-														'<li>13:00</li>' +
-														'<li>16:15</li>' +
-														'<li>19:45</li>' +
+														'<li>' + .film.times.td[0] + '</li>' +
+														'<li>' + .film.times.td[1] + '</li>' +
+														'<li>' + .film.times.td[2] + '</li>' +
 													'</ul>' +
 												'</li>' +
 												'<li class="dropdown">' +
 													'<a href="#">Standard</a>' +
 													'<ul class="dropdown-menu">' +
-														'<li>11:30</li>' +
-														'<li>12:00</li>' +
-														'<li>14:00</li>' +
-														'<li>14:45</li>' +
-														'<li>15:30</li>' +
-														'<li>17:15</li>' +
+														'<li>' + .film.times.standard[0] + '</li>' +
+														'<li>' + .film.times.standard[0] + '</li>' +
+														'<li>' + .film.times.standard[0] + '</li>' +
+														'<li>' + .film.times.standard[0] + '</li>' +
+														'<li>' + .film.times.standard[0] + '</li>' +
+														'<li>' + .film.times.standard[0] + '</li>' +
 													'</ul>' +
 												'</li>' +
 											'</ul>' +
