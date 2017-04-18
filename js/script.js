@@ -161,7 +161,7 @@ $(document).ready(function(){
 						//output film times to page
 						var filmTimes = '';
 						
-						$(".film-list").append(filmTimes);
+						$(".film-times-inner").append(filmTimes);
 					})(data[i]);
 				}			  
 			} else {			    
