@@ -378,6 +378,9 @@ figcaption{
 .film-thumb img{
 	max-width: 100%;
 }
+.film-list-land, .film-list-port{
+	margin-bottom: 20px;
+}
 @media all and (orientation: portrait) { 
 	.film-list-land{
 		display: none;
@@ -485,6 +488,7 @@ figcaption{
 	}
 	.film-list-port{
 		display: none;
+		
 	}	
 	#filmTimes h2 {
 	    font-size: 1.5rem;
