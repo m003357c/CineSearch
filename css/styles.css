@@ -560,6 +560,12 @@ figcaption{
 		width: 33%;
 		text-align: center;
 	}
+	#boxOffice a:nth-child(n3) figure{
+		padding-right: 10px;
+	}
+	#boxOffice a:nth-child(n3-1) figure{
+		padding-left: 10px;
+	}
 }
 
 
