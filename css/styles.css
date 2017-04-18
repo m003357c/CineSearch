@@ -526,8 +526,10 @@ figcaption{
 		margin-bottom: -1px;
 		color: #fff;
 	}
+	table{
+		border-collapse: collapse;
+	}	
 	tr{
-		margin-bottom: 20px;
 		border-bottom: 1px solid rgba(255,255,255,0.2);
 	}	
 	th{
