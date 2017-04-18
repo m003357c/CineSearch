@@ -228,6 +228,7 @@ $(document).ready(function(){
 								  '</div>';
 						
 						$(".film-times-inner").append(filmTimes);
+						$(".film-list-land td:contains('undefined')").empty();
 					})(data[i]);
 				}			  
 			} else {			    
