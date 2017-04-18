@@ -152,7 +152,7 @@ $(document).ready(function(){
 		$("#filmTimes").show();
 		
 		var venuName = $(this).parent().children("h1").text();
-		var venuLocation = $(this).parent().children(".cineLoc").text();
+		var venuLocation = $(this).parent().children("p").children("span").text();
 		$(".film-times-inner h2").html(venuName + " - <small>" + venuLocation + "</small>");
 		
 		var request = new XMLHttpRequest();
