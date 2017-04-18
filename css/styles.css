@@ -461,6 +461,7 @@ figcaption{
 	.append-form input {
 	    height: 50px;
 	    max-width: 50%;
+	    margin-left: 17%;
 	}
 	#searchBox a.btn {
 	    height: 50px;
