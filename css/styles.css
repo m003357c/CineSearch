@@ -476,7 +476,7 @@ figcaption{
 		padding-right: 30px;
 	}
 	td{
-	        padding: 20px;
+	        padding: 20px 15px;
 	}
 }
 @media (min-width: 460px){
