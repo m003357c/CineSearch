@@ -415,13 +415,15 @@ figcaption{
 @media all and (orientation: landscape) { 	
 	.film-list-port{
 		display: none;
-		
 	}	
 	#filmTimes h2 {
 	    font-size: 1.5rem;
 	    text-align: left;
 	    margin-top: 0;
 	}
+	#filmTimes h2 br{
+		display: none;
+	}	
 	#filmTimes h5 {
 	    font-size: 1.3rem;
 	}
