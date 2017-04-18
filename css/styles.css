@@ -78,6 +78,7 @@ header{
 }
 .top-bar ul li img{
 	vertical-align: middle;
+	opacity: 0;
 }
 .top-bar li:nth-child(1), .top-bar li:nth-child(3){
 	width:10%;
