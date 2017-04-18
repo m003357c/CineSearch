@@ -234,8 +234,7 @@ nav ul li a{
 	margin-right: -5px;	
 	height: 40px;
 	border: none;
-	max-width: 197px;
-	width: 100%;
+	width: calc(100% - 82px);
 	padding: 0 20px;
 	box-sizing: border-box;
    	font-size: 16px;
