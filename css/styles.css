@@ -456,29 +456,7 @@ figcaption{
 		border-color: #f2b632;
 	}
 }
-@media all and (orientation: landscape) { 
-	#searchBox {
-	    padding: 40px 20px;
-	    width: 80%;
-	    margin: 0 auto;
-	}
-	.absoluteSearch {
-	    bottom: 200px;
-	}
-	.append-form input {
-	    height: 50px;
-	    max-width: 50%;
-	    margin-left: 17%;
-	}
-	#searchBox a.btn {
-	    height: 50px;
-	    width: 50px;
-	    line-height: 40px;
-	}
-	#searchBox label, #searchBox h2 {
-	    margin: 0 0 20px 0;
-	    font-size: 34px;
-	}
+@media all and (orientation: landscape) { 	
 	#filmTimes {
 	    top: 108px;
 	    left: 80px;
@@ -552,7 +530,33 @@ figcaption{
 	        padding: 20px;
 	}
 }
-
+@media (min-width: 460px){
+		
+}
+@media (min-width: 769px){
+	#searchBox {
+	    padding: 40px 20px;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.absoluteSearch {
+	    bottom: 200px;
+	}
+	.append-form input {
+	    height: 50px;
+	    max-width: 50%;
+	    margin-left: 17%;
+	}
+	#searchBox a.btn {
+	    height: 50px;
+	    width: 50px;
+	    line-height: 40px;
+	}
+	#searchBox label, #searchBox h2 {
+	    margin: 0 0 20px 0;
+	    font-size: 34px;
+	}
+}
 
 
 
