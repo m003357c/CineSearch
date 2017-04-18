@@ -30,7 +30,7 @@ $(document).ready(function(){
 		userLoc = new google.maps.LatLng(latitude, longitude); 
 		//set up mapOptions (Zoom = 0 - zoomed out)  
 		var mapOptions = {   
-			zoom: 13,  
+			zoom: 12,  
 			center: userLoc,
 			zoomControl: true,
 			mapTypeControl: false,
