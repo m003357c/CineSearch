@@ -81,6 +81,7 @@ $(document).ready(function(){
 	function showMap(){
 		$("#boxOffice").hide();
 		$("#mapHolder, .container").addClass("tallMap");
+		$(".top-bar li img").addClass("is-showing");
 		$("#searchBox").addClass("absoluteSearch");
 		setTimeout(function(){			
 			var center = map.getCenter();
