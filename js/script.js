@@ -159,7 +159,69 @@ $(document).ready(function(){
 				for (var i = 0; i < data.length; i++) {
 					(function (film) {
 						//output film times to page
-						var filmTimes = '';
+						var filmTimes = '<div class="film-list-land">' +
+									  '<div class="film-out">' +
+										  '<h2>CineWorld - Stoke on Trent</h2>' +
+										  '<div class="film-thumb">' +
+											'<img src="' + film.picture + '"/>' +
+										  '</div>' +
+										  '<div class="film-times">' +
+											'<h5>' + film.name + '</h5>' +
+											'<p><a href="#" class="date-controls active">Today</a><a href="#" class="date-controls">17/04/17</a><a href="#" class="date-controls">18/04/17</a></p>' +
+											'<table>' +
+												'<tr>' +
+													'<th>3D</th>' +
+													'<td>' + .film.times.td[0] + '</td>' +
+													'<td>' + .film.times.td[1] + '</td>' +
+													'<td>' + .film.times.td[2] + '</td>' +
+													'<td>' + .film.times.td[3] + '</td>' +
+													'<td>' + .film.times.td[4] + '</td>' +
+												'</tr>' +
+												'<tr>' +
+													'<th>Standard</th>' +
+													'<td>' + .film.times.standard[0] + '</td>' +
+													'<td>' + .film.times.standard[1] + '</td>' +
+													'<td>' + .film.times.standard[2] + '</td>' +
+													'<td>' + .film.times.standard[3] + '</td>' +
+													'<td>' + .film.times.standard[4] + '</td>' +
+												'</tr>' +
+											'</table>' +
+										  '</div>' +
+									  '</div>' +
+								  '</div>' +
+								  '<div class="film-list-port">' +
+									  '<div class="film-out">' +
+										  '<h2>CineWorld - <small>Stoke on Trent</small></h2>' +
+										  '<div class="film-thumb">' +
+											'<img src="assets/images/fantastic-thumb.jpg"/>' +
+										  '</div>' +
+										  '<div class="film-times">' +
+											'<h5>Fantastic Beasts</h5>' +
+											'<p><a href="#" class="btn date-change">&lt;</a>Today<a href="#" class="btn date-change">&gt;</a></p>' +
+											'<ul>' +
+												'<li class="dropdown">' +
+													'<a href="#">3D</a>' +
+													'<ul class="dropdown-menu">' +
+														'<li>13:00</li>' +
+														'<li>16:15</li>' +
+														'<li>19:45</li>' +
+													'</ul>' +
+												'</li>' +
+												'<li class="dropdown">' +
+													'<a href="#">Standard</a>' +
+													'<ul class="dropdown-menu">' +
+														'<li>11:30</li>' +
+														'<li>12:00</li>' +
+														'<li>14:00</li>' +
+														'<li>14:45</li>' +
+														'<li>15:30</li>' +
+														'<li>17:15</li>' +
+													'</ul>' +
+												'</li>' +
+											'</ul>' +
+										  '</div>' +
+									  '</div>' +
+								  '</div>';
 						
 						$(".film-times-inner").append(filmTimes);
 					})(data[i]);
