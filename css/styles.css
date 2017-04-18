@@ -103,7 +103,7 @@ header{
 	color: #f2b632;
 	font-size: 21px;
 	letter-spacing: 2px;
-	padding-left: 10%;
+	padding-left: 0;
 	box-sizing: border-box;
 }
 .top-bar li:nth-child(3){
