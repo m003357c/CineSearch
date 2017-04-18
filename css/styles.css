@@ -343,6 +343,7 @@ figcaption{
 	right: 20px;
 	height: calc(100vh - 100px);
 	z-index: 9000;
+	overflow-y: scroll;
 	-webkit-box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.5);
