@@ -1,10 +1,10 @@
 if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-			console.log('Service worker registered successfully');
-		}).catch(function(err) {
-			console.log('Service worker registration failed: ', err);
-		});
-	}
+	navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+		console.log('Service worker registered successfully');
+	}).catch(function(err) {
+		console.log('Service worker registration failed: ', err);
+	});
+}
 $(document).ready(function(){		
 	let map;
 	let userLoc;
@@ -214,11 +214,11 @@ $(document).ready(function(){
 													'<a href="#">Standard</a>' +
 													'<ul class="dropdown-menu">' +
 														'<li>' + film.times.standard[0] + '</li>' +
-														'<li>' + film.times.standard[0] + '</li>' +
-														'<li>' + film.times.standard[0] + '</li>' +
-														'<li>' + film.times.standard[0] + '</li>' +
-														'<li>' + film.times.standard[0] + '</li>' +
-														'<li>' + film.times.standard[0] + '</li>' +
+														'<li>' + film.times.standard[1] + '</li>' +
+														'<li>' + film.times.standard[2] + '</li>' +
+														'<li>' + film.times.standard[3] + '</li>' +
+														'<li>' + film.times.standard[4] + '</li>' +
+														'<li>' + film.times.standard[5] + '</li>' +
 													'</ul>' +
 												'</li>' +
 											'</ul>' +
