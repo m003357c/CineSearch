@@ -51,15 +51,6 @@ $(document).ready(function(){
 	window.addEventListener('load', success );
 	
 	//output films from films.json
-	/*$.getJSON("js/films.json", function(data) {
-		$.each( data, function( key, val ) {
-			var filmOutput = `<a href="#mapHolder" class="film-option"><figure>
-					  <img src="${val.picture}" alt="${val.name} Movie Poster">
-					  <figcaption>${val.name}</figcaption>
-					  </figure></a>`;
-			$("#boxOffice").append(filmOutput);
-		})
-	});*/
 	var request = new XMLHttpRequest();
 	request.open('GET', 'js/films.json', true);
 	request.onload = function() {
