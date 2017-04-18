@@ -514,8 +514,7 @@ figcaption{
 		border: 1px solid rgba(255,255,255,0.2);
 		border-bottom: none;
 		margin-right: 20px;	
-		opacity: 0.2;
-		color: #fff;
+		color: 1px solid rgba(255,255,255,0.2);
 		text-decoration: none;
 		font-size: 1rem;
 		padding: 5px 20px;
@@ -525,6 +524,7 @@ figcaption{
 		border-bottom: 1px solid #252839;
 		opacity: 1;
 		margin-bottom: -1px;
+		color: #fff;
 	}
 	tr{
 		margin-bottom: 20px;
