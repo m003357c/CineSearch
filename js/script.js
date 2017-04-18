@@ -161,7 +161,6 @@ $(document).ready(function(){
 						//output film times to page
 						var filmTimes = '<div class="film-list-land">' +
 									  '<div class="film-out">' +
-										  '<h2>CineWorld - Stoke on Trent</h2>' +
 										  '<div class="film-thumb">' +
 											'<img src="' + film.picture + '"/>' +
 										  '</div>' +
