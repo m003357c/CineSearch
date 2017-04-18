@@ -202,11 +202,9 @@ nav ul li a{
 /*----------------------------------------------*/
 #searchBox{
 	background: #f2b632;
+	padding: 20px;
 	position: relative;
 	z-index: 2;
-	padding: 40px 20px;
-        width: 80%;
-        margin: 0 auto;
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
@@ -231,11 +229,10 @@ nav ul li a{
 #searchBox h2 strong{
 	color: #252839;	
 }
+
 .append-form input{
 	margin-right: -5px;	
-	height: 50px;
-        max-width: 50%;
-        margin-left: 17%;
+	height: 40px;
 	border: none;
 	width: calc(100% - 82px);
 	padding: 0 20px;
@@ -259,14 +256,14 @@ a.btn{
 }
 #searchBox a.btn{
 	float: left;
-	height: 50px;
-	width: 50px;
-	line-height: 40px;
+	height: 40px;
+     	width: 40px;
 	text-align: center;
+	line-height: 30px;
 }
-#searchBox label, #searchBox h2 {
-    	margin: 0 0 20px 0;
-    	font-size: 34px;
+#searchBox a.btn:first-child{
+	/*border-right: 2px solid #f2b632;	*/
+	margin-right: 2px;
 }
 a.btn img{
 	vertical-align: middle;	
@@ -279,7 +276,7 @@ a.btn img{
 #searchBox .filmSearch a.btn{
 	display: inline-block;
 	width: auto;
-	padding: 5px 40px;
+	padding: 5px 10px;
 }
 #searchBox .filmSearch a.cancel-search{
 	background: #990d03;
@@ -532,12 +529,31 @@ figcaption{
 	#mapHolder {
 	    height: 250px;
 	    margin-bottom: -140px;
-	}	
+	}
+	#searchBox {
+	    padding: 40px 20px;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	#searchBox .filmSearch a.btn {
+		padding: 5px 40px;
+	}
 	.absoluteSearch {
 	    bottom: 220px;
 	}
-	#searchBox a.btn:first-child{
-		margin-right: 2px;
+	.append-form input {
+	    height: 50px;
+	    max-width: 50%;
+	    margin-left: 17%;
+	}
+	#searchBox a.btn {
+	    height: 50px;
+	    width: 50px;
+	    line-height: 40px;
+	}
+	#searchBox label, #searchBox h2 {
+	    margin: 0 0 20px 0;
+	    font-size: 34px;
 	}
 	figure {
 		width: 33%;
@@ -570,15 +586,3 @@ figcaption{
 	    box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
 	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
