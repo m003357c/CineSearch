@@ -425,7 +425,7 @@ figcaption{
 		text-decoration: none;
 		text-align: center;
 		border: 1px solid #fff;
-		padding: 10px 0;
+		padding: 5px 0;
 		box-sizing: border-box;
 		display: block;
 		margin-bottom: 15px; 
@@ -440,6 +440,7 @@ figcaption{
 	}
 	.film-times .dropdown-menu li{
 		color: #252839;
+		padding: 5px 0;
 		margin-bottom: 5px;
 	}
 	.film-times li.dropdown.open{
