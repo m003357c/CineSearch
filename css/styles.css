@@ -334,6 +334,7 @@ figcaption{
 	color: #fff;
 }
 #filmTimes{
+	display: none;
 	background: #252839;
 	padding: 25px 20px;
 	box-sizing: border-box;
