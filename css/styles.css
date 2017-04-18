@@ -325,9 +325,14 @@ figcaption{
 /*----------------------------------------------*/
 .gm-style-iw h1{
 	margin-bottom: 0;
+	color: #252839;
 }
 .gm-style-iw p{
 	margin-top: 0;
+	color: #252839;
+}
+.gm-style-iw a{
+	padding: 5px 10px;
 }
 #filmTimes h2, #filmTimes h2 small, .film-times p,
 .film-times li, .film-times li a{
