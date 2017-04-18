@@ -424,6 +424,10 @@ figcaption{
 		display: block;
 		margin-bottom: 15px; 
 	}
+	.film-times li.dropdown.open .dropdown-menu{
+		display: block;
+		top: 33px;
+	}
 	.film-times .dropdown-menu{
 		display: none;	
 		position: absolute;
