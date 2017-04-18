@@ -75,6 +75,7 @@ header{
 	line-height: 100%;
 	display: inline-block;
 	list-style-type: none;
+	text-align: center;
 }
 .top-bar ul li img{
 	vertical-align: middle;
