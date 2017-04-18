@@ -300,6 +300,7 @@ figcaption{
 	position: absolute;
 	top: -20px;
 	right: -13px;
+	z-index: 9999;
 	font-size: 1.3rem;
 	background: #f2b632;
 	color: #252839;
