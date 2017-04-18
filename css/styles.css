@@ -457,15 +457,6 @@ figcaption{
 	}
 }
 @media all and (orientation: landscape) { 	
-	#filmTimes {
-	    top: 108px;
-	    left: 80px;
-	    right: 80px;
-	    height: calc(100vh - 160px);
-	    -webkit-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
-	    -moz-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
-	    box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
-	}
 	.film-list-port{
 		display: none;
 		
@@ -576,6 +567,15 @@ figcaption{
 	}	
 	#boxOffice a:nth-child(n3-1) figure{
 		padding-left: 10px;
+	}
+	#filmTimes {
+	    top: 108px;
+	    left: 80px;
+	    right: 80px;
+	    height: calc(100vh - 160px);
+	    -webkit-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
+	    -moz-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
+	    box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
 	}
 }
 
