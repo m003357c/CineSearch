@@ -214,7 +214,7 @@ nav ul li a{
 }	
 .absoluteSearch{
 	position: absolute;
-	bottom: 170px;
+	bottom: 140px;
 }
 #searchBox label, #searchBox h2{
 	display: block;
