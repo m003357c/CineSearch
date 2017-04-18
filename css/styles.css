@@ -558,6 +558,7 @@ figcaption{
 	}
 	figure {
 		width: 33%;
+		text-align: center;
 	}
 }
 
