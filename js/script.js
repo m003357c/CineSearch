@@ -176,7 +176,7 @@ $(document).ready(function(){
 						var filmTimes = '<div class="film-list-land">' +
 									  '<div class="film-out">' +
 										  '<div class="film-thumb">' +
-											'<img src="' + film.picture + '"/>' +
+											'<img src="' + film.picture + '" alt="' + film.name + ' Movie Poster"/>' +
 										  '</div>' +
 										  '<div class="film-times">' +
 											'<h5>' + film.name + '</h5>' +
@@ -205,7 +205,7 @@ $(document).ready(function(){
 								  '<div class="film-list-port">' +
 									  '<div class="film-out">' +
 										  '<div class="film-thumb">' +
-											'<img src="' + film.picture + '"/>' +
+											'<img src="' + film.picture + '" alt="' + film.name + ' Movie Poster"/>' +
 										  '</div>' +
 										  '<div class="film-times">' +
 											'<h5>' + film.name + '</h5>' +
