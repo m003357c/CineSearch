@@ -85,10 +85,8 @@ $(document).ready(function(){
 				if (request.status >= 200 && request.status < 400) {
 					// Success!
 					var data = JSON.parse(request.responseText);
-					console.log(data.length);
 					for (var i = 0; i < data.length; i++) {
 						(function (cinema) {
-							console.log(cinema.latitude,cinema.longitude);
 							marker = new google.maps.Marker({
 								position: new google.maps.LatLng(cinema.latitude,cinema.longitude),
 								map: map,
@@ -186,6 +184,10 @@ $(document).ready(function(){
 		} else{
 			$(this).parent().addClass("open");
 		}
+	});
+	$("body").on("click",".dropdown-menu li",function() {
+		var thisTime = $(this).text();
+		$(this).parent().parent().toggleClass("open active").children("a").text(thisTime);
 	});
 	
 	
