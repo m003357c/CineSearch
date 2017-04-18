@@ -51,7 +51,7 @@ $(document).ready(function(){
 	window.addEventListener('load', success );
 	
 	//output films from films.json
-	$.getJSON("js/films.json", function(data) {
+	/*$.getJSON("js/films.json", function(data) {
 		$.each( data, function( key, val ) {
 			var filmOutput = `<a href="#mapHolder" class="film-option"><figure>
 					  <img src="${val.picture}" alt="${val.name} Movie Poster">
@@ -59,7 +59,25 @@ $(document).ready(function(){
 					  </figure></a>`;
 			$("#boxOffice").append(filmOutput);
 		})
-	});
+	});*/
+	var request = new XMLHttpRequest();
+	request.open('GET', 'js/films.json', true);
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400) {
+			// Success!
+			var data = JSON.parse(request.responseText);
+			for (var i = 0; i < data.length; i++) {
+				(function (film) {
+					var filmOutput = `<a href="#mapHolder" class="film-option"><figure>
+							  <img src="${film.picture}" alt="${film.name} Movie Poster">
+							  <figcaption>${film.name}</figcaption>
+							  </figure></a>`;
+					$("#boxOffice").append(filmOutput);
+				})(data[i]);
+			}			  
+		} else {console.log("Error returned");}};
+	request.onerror = function() {console.log("Complete Error");};
+	request.send();
 	//hamburger navigation
 	$('.hamburger').parent().click(function(){
 		$("nav").addClass("is-showing");
