@@ -382,7 +382,7 @@ figcaption{
 	max-width: 100%;
 }
 .film-list-land, .film-list-port{
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 @media all and (orientation: portrait) { 
 	.film-list-land{
@@ -425,7 +425,7 @@ figcaption{
 		text-decoration: none;
 		text-align: center;
 		border: 1px solid #fff;
-		padding: 5px 0;
+		padding: 10px 0;
 		box-sizing: border-box;
 		display: block;
 		margin-bottom: 15px; 
