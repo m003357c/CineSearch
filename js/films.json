@@ -3,7 +3,7 @@
         "name": "Fantastic Beasts",
         "picture": "assets/images/fantastic-thumb.jpg",
         "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
         }
     },
@@ -11,7 +11,7 @@
       "name": "Doctor Strange",
       "picture": "assets/images/strange-thumb.jpg",
        "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
         }
     },
@@ -19,7 +19,7 @@
       "name": "Arrival",
       "picture": "assets/images/arrival-thumb.jpg",
       "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
        }
     },
@@ -27,7 +27,7 @@
       "name": "Star Wars: Rogue One",
       "picture": "assets/images/rogue-thumb.jpg",
       "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
        }
     },
@@ -35,7 +35,7 @@
       "name": "Passengers",
       "picture": "assets/images/passenger-thumb.jpg",
       "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
         }
     },
@@ -43,7 +43,7 @@
       "name": "Sully",
       "picture": "assets/images/sully-thumb.jpg",
        "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
         }
     },
@@ -51,7 +51,7 @@
       "name": "Moana",
       "picture": "assets/images/moana-thumb.jpg",
        "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
         }
     },
@@ -59,7 +59,7 @@
       "name": "Assassins Creed",
       "picture": "assets/images/assassin-thumb.jpg",
        "times": { 
-            "3d": ["13:00","16:15","19:45"],
+            "td": ["13:00","16:15","19:45"],
             "standard": ["11:30","12:00","14:00","14:45","15:30"]
         }
     }
