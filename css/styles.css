@@ -450,6 +450,36 @@ figcaption{
 	}
 }
 @media all and (orientation: landscape) { 
+	#searchBox {
+	    padding: 40px 20px;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.absoluteSearch {
+	    bottom: 200px;
+	}
+	.append-form input {
+	    height: 50px;
+	    max-width: 50%;
+	}
+	#searchBox a.btn {
+	    height: 50px;
+	    width: 50px;
+	    line-height: 40px;
+	}
+	#searchBox label, #searchBox h2 {
+	    margin: 0 0 20px 0;
+	    font-size: 34px;
+	}
+	#filmTimes {
+	    top: 108px;
+	    left: 80px;
+	    right: 80px;
+	    height: calc(100vh - 160px);
+	    -webkit-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
+	    -moz-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
+	    box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
+	}
 	.film-list-port{
 		display: none;
 	}	
@@ -461,6 +491,7 @@ figcaption{
 	.film-thumb{
 		width: 30%;
 		float: left;
+		text-align: center;
 	}
 	.film-thumb img{
 		max-width: 100%;
