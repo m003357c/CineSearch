@@ -165,7 +165,7 @@ $(document).ready(function(){
 		
 		var venuName = $(this).parent().children("h1").text();
 		var venuLocation = $(this).parent().children("p").children("span").text();
-		$(".film-times-inner h2").html(venuName + "<br><small>" + venuLocation + "</small>");
+		$(".film-times-inner h2").html(venuName + "<br> <small>" + venuLocation + "</small>");
 		
 		var request = new XMLHttpRequest();
 		request.open('GET', 'js/films.json', true);
