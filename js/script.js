@@ -81,9 +81,11 @@ $(document).ready(function(){
 	function showMap(){
 		$("#boxOffice").hide();
 		$("#mapHolder, .container").addClass("tallMap");
-		$(".top-bar li img").addClass("is-showing");
+		
 		$("#searchBox").addClass("absoluteSearch");
 		setTimeout(function(){			
+			$(".top-bar li img").addClass("is-showing");
+			
 			var center = map.getCenter();
 			google.maps.event.trigger(map, "resize");
 			map.setCenter(center);
