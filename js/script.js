@@ -176,7 +176,10 @@ $(document).ready(function(){
 		request.send();
 	});
 	
-	
+	$("body").on("click","span.btn-close",function() {
+		$("#filmTimes").hide();
+		$(".film-times-inner").empty();
+	});
 	
 	
 	
