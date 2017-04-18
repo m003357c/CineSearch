@@ -1,11 +1,11 @@
-$(document).ready(function(){	
-	if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
 			console.log('Service worker registered successfully');
 		}).catch(function(err) {
 			console.log('Service worker registration failed: ', err);
 		});
 	}
+$(document).ready(function(){		
 	let map;
 	let userLoc;
 	var markersArray = []; 
@@ -189,7 +189,10 @@ $(document).ready(function(){
 		var thisTime = $(this).text();
 		$(this).parent().parent().toggleClass("open active").children("a").text(thisTime);
 	});
-	
+	$("body").on("click","a.date-controls",function() {
+		$(".date-controls.active").removeClass("active");
+		$(this).addClass("active");
+	});
 	
 	
 	
