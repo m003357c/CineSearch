@@ -424,10 +424,6 @@ figcaption{
 		display: block;
 		margin-bottom: 15px; 
 	}
-	.film-times li.dropdown.open .dropdown-menu{
-		display: block;
-		top: 33px;
-	}
 	.film-times .dropdown-menu{
 		display: none;	
 		position: absolute;
@@ -439,6 +435,14 @@ figcaption{
 	.film-times .dropdown-menu li{
 		color: #252839;
 		margin-bottom: 5px;
+	}
+	.film-times li.dropdown.open{
+		background: #fff;
+		color: #252839;
+	}	
+	.film-times li.dropdown.open .dropdown-menu{
+		display: block;
+		top: 33px;
 	}
 }
 @media all and (orientation: landscape) { 
