@@ -446,6 +446,10 @@ figcaption{
 		display: block;
 		top: 33px;
 	}
+	.film-times li.active.open a{
+		color: #f2b632;
+		border-color: #f2b632;
+	}
 }
 @media all and (orientation: landscape) { 
 	.film-list-port{
