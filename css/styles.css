@@ -563,6 +563,7 @@ figcaption{
 	figure {
 		width: 33%;
 		text-align: center;
+		margin: 20px 0 10px 0;
 	}
 	#boxOffice a:nth-child(odd) figure{
 		padding-right: 0;
