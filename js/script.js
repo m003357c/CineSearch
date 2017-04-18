@@ -96,7 +96,7 @@ $(document).ready(function(){
 							//register for click events on info window
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
-										      '<p><span class="cineLoc"' + cinema.location +'</span><em> ' + cinema.address + '</em></p>' +
+										      '<p><span class="cineLoc">' + cinema.location +'</span><em> ' + cinema.address + '</em></p>' +
 										      '<a href="#" class="btn viewing-times-link">Viewing Times</a>');
 								infoWindow.open(map, this);
 							});
