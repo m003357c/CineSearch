@@ -218,7 +218,6 @@ $(document).ready(function(){
 														'<li>' + film.times.standard[2] + '</li>' +
 														'<li>' + film.times.standard[3] + '</li>' +
 														'<li>' + film.times.standard[4] + '</li>' +
-														'<li>' + film.times.standard[5] + '</li>' +
 													'</ul>' +
 												'</li>' +
 											'</ul>' +
