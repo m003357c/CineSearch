@@ -534,6 +534,9 @@ figcaption{
 	    width: 80%;
 	    margin: 0 auto;
 	}
+	#searchBox .filmSearch a.btn {
+		padding: 5px 40px;
+	}
 	.absoluteSearch {
 	    bottom: 220px;
 	}
