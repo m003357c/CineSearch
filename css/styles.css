@@ -531,7 +531,10 @@ figcaption{
 	}	
 	tr{
 		border-bottom: 1px solid rgba(255,255,255,0.2);
-	}	
+	}
+	tr:last-child{
+		border-bottom: none;
+	}
 	th{
 		color: #fff;
 		text-align: left;
