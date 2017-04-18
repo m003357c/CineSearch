@@ -533,7 +533,11 @@ figcaption{
 @media (min-width: 460px){
 		
 }
-@media (min-width: 769px){
+@media (min-width: 767px){
+	#mapHolder {
+	    height: 250px;
+	    margin-bottom: -140px;
+	}
 	#searchBox {
 	    padding: 40px 20px;
 	    width: 80%;
