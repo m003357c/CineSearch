@@ -429,6 +429,8 @@ figcaption{
 		position: absolute;
 		width: 100%;
 		background: #fff;
+		top: 33px;
+	        z-index: 9001;
 	}
 	.film-times .dropdown-menu li{
 		color: #252839;
