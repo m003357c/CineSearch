@@ -556,6 +556,9 @@ figcaption{
 	    margin: 0 0 20px 0;
 	    font-size: 34px;
 	}
+	figure {
+		width: 33%;
+	}
 }
 
 
