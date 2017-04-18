@@ -195,7 +195,6 @@ $(document).ready(function(){
 								  '</div>' +
 								  '<div class="film-list-port">' +
 									  '<div class="film-out">' +
-										  '<h2>CineWorld - <small>Stoke on Trent</small></h2>' +
 										  '<div class="film-thumb">' +
 											'<img src="' + film.picture + '"/>' +
 										  '</div>' +
