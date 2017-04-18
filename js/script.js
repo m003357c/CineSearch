@@ -96,7 +96,7 @@ $(document).ready(function(){
 							//register for click events on info window
 							google.maps.event.addListener(marker, 'click', function() { 
 								infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
-										      '<p>' + cinema.location +'<em> ' + cinema.address + '</em></p>' +
+										      '<p><span class="cineLoc"' + cinema.location +'</span><em> ' + cinema.address + '</em></p>' +
 										      '<a href="#" class="btn viewing-times-link">Viewing Times</a>');
 								infoWindow.open(map, this);
 							});
@@ -152,7 +152,7 @@ $(document).ready(function(){
 		$("#filmTimes").show();
 		
 		var venuName = $(this).parent().children("h1").text();
-		var venuLocation = $(this).parent().children("p").text();
+		var venuLocation = $(this).parent().children(".cineLoc").text();
 		$(".film-times-inner h2").html(venuName + " - <small>" + venuLocation + "</small>");
 		
 		var request = new XMLHttpRequest();
