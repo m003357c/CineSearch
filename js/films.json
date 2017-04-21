@@ -1,4 +1,5 @@
-[
+{
+"films":[
     {
         "name": "Fantastic Beasts",
         "picture": "assets/images/fantastic-thumb.jpg",
@@ -64,3 +65,4 @@
         }
     }
 ]
+}
