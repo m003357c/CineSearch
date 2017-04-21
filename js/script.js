@@ -13,8 +13,8 @@ if(boxOfficeContainer){
         }).then(films => {
             const filmOutput = films.map(film => {
                 return `<a href="#mapHolder" class="film-option"><figure>
-			  <img src="${films.picture}" alt="${films.name} Movie Poster">
-			  <figcaption>${films.name}</figcaption>
+			  <img src="${film.picture}" alt="${film.name} Movie Poster">
+			  <figcaption>${film.name}</figcaption>
 			  </figure></a>`;
             }).join("\n");            
             boxOfficeContainer.innerHTML = filmOutput;
