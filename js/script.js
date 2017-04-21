@@ -7,7 +7,7 @@ if ('serviceWorker' in navigator) {
 }
 const boxOfficeContainer = document.getElementById('boxOffice');
 if(boxOfficeContainer){
-    fetch("films.json")
+    fetch("js/films.json")
         .then(response => {
             return response.json();
         }).then(films => {
