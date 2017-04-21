@@ -63,7 +63,7 @@ self.addEventListener('fetch', function(event) {
     })
   );
   // Handle requests for events JSON file
-  } else if ((requestURL.pathname === BASEPATH + 'js/films.json') || (requestURL.pathname === BASEPATH + 'js/cinemas.json')) {
+  } else if (requestURL.pathname === BASEPATH + 'js/films.json') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return fetch(event.request).then(function(networkResponse) {
