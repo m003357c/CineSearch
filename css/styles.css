@@ -142,13 +142,13 @@ header{
 .tallMap #cineMap{
 	transform: none;
 }
-#cineMap{
+#cineMap.offline-map{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-image: url('assets/images/offlinemap.jpg');
+  background-image: url('../assets/images/offlinemap.jpg');
 }
 /*----------------------------------------------*/
 /*----------------- Search Box -----------------*/
