@@ -1,4 +1,4 @@
-/*var CACHE_NAME = 'CineCache';
+var CACHE_NAME = 'CineCache';
 var BASEPATH = '/CineSearch/';
 var CACHED_URLS = [
   // Our HTML
@@ -8,10 +8,19 @@ var CACHED_URLS = [
     'https://fonts.googleapis.com/css?family=Roboto:400,300',
   // JavaScript
     BASEPATH +  'assets/icons/manifest.json',
-    BASEPATH +  'films.json',
+    BASEPATH +  'js/films.json',
+    BASEPATH +  'js/cinemas.json',
     BASEPATH +  'js/script.js',
     'https://code.jquery.com/jquery-3.2.1.slim.min.js'
   // Images
+    BASEPATH + 'assets/images/fantastic-thumb.jpg',
+    BASEPATH + 'assets/images/strange-thumb.jpg',
+    BASEPATH + 'assets/images/arrival-thumb.jpg',
+    BASEPATH + 'assets/images/rogue-thumb.jpg',
+    BASEPATH + 'assets/images/passenger-thumb.jpg',
+    BASEPATH + 'assets/images/sully-thumb.jpg',
+    BASEPATH + 'assets/images/maona-thumb.jpg',
+    BASEPATH + 'assets/images/assassin-thumb.jpg'
 ];
 
 self.addEventListener('install', function(event) {
@@ -38,7 +47,7 @@ self.addEventListener('fetch', function(event) {
       })
     );
   // Handle requests for events JSON file
-  } else if (requestURL.pathname === BASE_PATH + 'films.json') {
+  } else if (requestURL.pathname === BASE_PATH + 'js/films.json') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return fetch(event.request).then(function(networkResponse) {
@@ -49,6 +58,17 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
+  } else if (requestURL.pathname === BASE_PATH + 'js/cinemas.json') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return fetch(event.request).then(function(networkResponse) {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        }).catch(function() {
+          return caches.match(event.request);
+        });
+      })
+  );
   // Handle requests for event images.
   } else if (requestURL.pathname.includes('/images/')) {
     event.respondWith(
@@ -89,4 +109,4 @@ self.addEventListener('activate', function(event) {
       );
     })
   );
-});*/
+});
