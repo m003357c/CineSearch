@@ -19,6 +19,13 @@ let options = {
 	timeout: 5000,
 	maximumAge: 0
 };
+function initCoords() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(initialize, locationError);
+  } else {
+    showError("Your browser does not support Geolocation!");
+  }
+}
 function initMap(pos) {	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
