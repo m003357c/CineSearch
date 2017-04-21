@@ -60,6 +60,7 @@ self.addEventListener('fetch', function(event) {
       { mode: 'no-cors', cache: 'no-store' }
     ).catch(function() {
       return caches.match('js/offline-map.js');
+      document.getElementById('cineMap').classList.add('offline-map');
     })
   );
   // Handle requests for events JSON file
