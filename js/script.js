@@ -11,7 +11,7 @@ if(boxOfficeContainer){
         .then(response => {
             return response.json();
         }).then(films => {
-            const filmOutput = films.map(films => {
+            const filmOutput = films.map(film => {
                 return `<a href="#mapHolder" class="film-option"><figure>
 			  <img src="${films.picture}" alt="${films.name} Movie Poster">
 			  <figcaption>${films.name}</figcaption>
