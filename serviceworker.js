@@ -48,7 +48,7 @@ var CACHED_URLS = [
     BASEPATH + 'assets/icons/ms-icon-144x144.png',
     BASEPATH + 'assets/icons/ms-icon-150x150.png',
     BASEPATH + 'assets/icons/ms-icon-310x310.png',
-    BASEPATH + 'assets/icons/ms-icon-70x70.png',
+    BASEPATH + 'assets/icons/ms-icon-70x70.png'
 ];
 
 self.addEventListener('install', function(event) {
