@@ -11,7 +11,7 @@ var CACHED_URLS = [
     BASEPATH +  'js/films.json',
     BASEPATH +  'js/cinemas.json',
     BASEPATH +  'js/script.js',
-    'https://code.jquery.com/jquery-3.2.1.slim.min.js',
+    'https://code.jquery.com/jquery-3.2.1.min.js',
   // Images
     BASEPATH + 'assets/images/fantastic-thumb.jpg',
     BASEPATH + 'assets/images/strange-thumb.jpg',
