@@ -10,13 +10,12 @@ let map;
 let userLoc;
 var markersArray = []; 
 var marker;
-
-
 let options = {
 	enableHighAccuracy: true,
 	timeout: 5000,
 	maximumAge: 0
 };
+
 function initCoords() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(initialize, locationError);
@@ -24,6 +23,7 @@ function initCoords() {
     showError("Your browser does not support Geolocation!");
   }
 }
+
 function initMap(pos) {	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
@@ -54,6 +54,7 @@ function error(err) {
 };
 navigator.geolocation.getCurrentPosition(initMap, error, options);
 window.addEventListener('load', initMap);
+
 var infoWindow = new google.maps.InfoWindow({
 			content: ''
 		 });
