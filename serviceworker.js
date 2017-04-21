@@ -47,7 +47,7 @@ self.addEventListener('fetch', function(event) {
       })
     );
   // Handle requests for events JSON file
-  } else if (requestURL.pathname === BASE_PATH + 'js/films.json') {
+  } else if ((requestURL.pathname === BASEPATH + 'js/films.json') || (requestURL.pathname === BASEPATH + 'js/cinemas.json')) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return fetch(event.request).then(function(networkResponse) {
@@ -58,17 +58,6 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
-  } else if (requestURL.pathname === BASE_PATH + 'js/cinemas.json') {
-    event.respondWith(
-      caches.open(CACHE_NAME).then(function(cache) {
-        return fetch(event.request).then(function(networkResponse) {
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        }).catch(function() {
-          return caches.match(event.request);
-        });
-      })
-  );
   // Handle requests for event images.
   } else if (requestURL.pathname.includes('/images/')) {
     event.respondWith(
