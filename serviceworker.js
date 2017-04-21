@@ -1,4 +1,4 @@
-/*var CACHE_NAME = 'CineCache';
+var CACHE_NAME = 'CineCache';
 var BASEPATH = '/CineSearch/';
 var CACHED_URLS = [
   // Our HTML
@@ -60,7 +60,6 @@ self.addEventListener('fetch', function(event) {
       { mode: 'no-cors', cache: 'no-store' }
     ).catch(function() {
       return caches.match('js/offline-map.js');
-      document.getElementById('cineMap').classList.add('offline-map');
     })
   );
   // Handle requests for events JSON file
@@ -115,4 +114,4 @@ self.addEventListener('activate', function(event) {
       );
     })
   );
-});*/
+});
