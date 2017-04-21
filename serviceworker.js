@@ -24,6 +24,7 @@ var CACHED_URLS = [
     BASEPATH + 'assets/images/assassin-thumb.jpg',
     BASEPATH + 'assets/images/location.png',
     BASEPATH + 'assets/images/back.png'
+    BASEPATH + 'assets/images/offlinemap.jpg'
 ];
 
 var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap';
