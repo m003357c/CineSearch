@@ -5,21 +5,7 @@ if ('serviceWorker' in navigator) {
 		console.log('Service worker registration failed: ', err);
 	});
 }
-const boxOfficeContainer = document.getElementById('boxOffice');
-if(boxOfficeContainer){
-    fetch("js/films.json")
-        .then(response => {
-            return response.json();
-        }).then(films => {
-            const filmOutput = films.map(film => {
-                return `<a href="#mapHolder" class="film-option"><figure>
-			  <img src="${film.picture}" alt="${film.name} Movie Poster">
-			  <figcaption>${film.name}</figcaption>
-			  </figure></a>`;
-            }).join("\n");            
-            boxOfficeContainer.innerHTML = filmOutput;
-        });
-}
+
 
 let map;
 let userLoc;
@@ -30,14 +16,6 @@ let options = {
 	timeout: 5000,
 	maximumAge: 0
 };
-
-function initCoords() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(initialize, locationError);
-  } else {
-    showError("Your browser does not support Geolocation!");
-  }
-}
 
 function initMap(pos) {	
 	if (document.getElementById( 'cineMap' ) === null) {
@@ -74,7 +52,21 @@ var infoWindow = new google.maps.InfoWindow({
 			content: ''
 		 });
 
-
+const boxOfficeContainer = document.getElementById('boxOffice');
+if(boxOfficeContainer){
+    fetch("js/films.json")
+        .then(response => {
+            return response.json();
+        }).then(films => {
+            const filmOutput = films.map(film => {
+                return `<a href="#mapHolder" class="film-option"><figure>
+			  <img src="${film.picture}" alt="${film.name} Movie Poster">
+			  <figcaption>${film.name}</figcaption>
+			  </figure></a>`;
+            }).join("\n");            
+            boxOfficeContainer.innerHTML = filmOutput;
+        });
+}
 $(document).ready(function(){		
 	/*let map;
 	let userLoc;
