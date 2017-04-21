@@ -1,18 +1,16 @@
 var CACHE_NAME = 'CineCache';
 var BASEPATH = '/CineSearch/';
 var CACHED_URLS = [
-  // Our HTML
+  // HTML
     BASEPATH + 'index.html',
   // Stylesheets and fonts    
-    BASEPATH +  'css/styles.css',
-    'https://fonts.googleapis.com/css?family=Roboto:400,300',
+    BASEPATH +  'css/styles.css',    
   // JavaScript
     BASEPATH +  'assets/icons/manifest.json',
     BASEPATH +  'js/films.json',
     BASEPATH +  'js/cinemas.json',
     BASEPATH +  'js/script.js',
-    BASEPATH +  'js/offline-map.js',
-    'https://code.jquery.com/jquery-3.2.1.min.js',
+    BASEPATH +  'js/offline-map.js',    
   // Images
     BASEPATH + 'assets/images/fantastic-thumb.jpg',
     BASEPATH + 'assets/images/strange-thumb.jpg',
@@ -24,7 +22,10 @@ var CACHED_URLS = [
     BASEPATH + 'assets/images/assassin-thumb.jpg',
     BASEPATH + 'assets/images/location.png',
     BASEPATH + 'assets/images/back.png',
-    BASEPATH + 'assets/images/offlinemap.jpg'
+    BASEPATH + 'assets/images/offlinemap.jpg',
+    // External
+    'https://fonts.googleapis.com/css?family=Roboto:400,300',
+    'https://code.jquery.com/jquery-3.2.1.min.js'
 ];
 
 var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap';
