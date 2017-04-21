@@ -5,6 +5,53 @@ if ('serviceWorker' in navigator) {
 		console.log('Service worker registration failed: ', err);
 	});
 }
+
+let map;
+let userLoc;
+var markersArray = []; 
+var marker;
+var infoWindow = new google.maps.InfoWindow({
+			content: ''
+		 });
+
+let options = {
+	enableHighAccuracy: true,
+	timeout: 5000,
+	maximumAge: 0
+};
+function initMap(pos) {	
+	if (document.getElementById( 'cineMap' ) === null) {
+		return false;
+	} 
+	let latitude  = pos.coords.latitude;
+	let longitude = pos.coords.longitude;
+
+	//latitude and longitude for Mellor building  
+	userLoc = new google.maps.LatLng(latitude, longitude); 
+	//set up mapOptions (Zoom = 0 - zoomed out)  
+	var mapOptions = {   
+		zoom: 12,  
+		center: userLoc,
+		zoomControl: true,
+		mapTypeControl: false,
+		scaleControl: true,
+		streetViewControl: false,
+		rotateControl: false,
+		fullscreenControl: false
+	};    
+	//create map using mapOptions 
+	map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
+	map.setOptions({draggable: true});
+
+};
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+};
+navigator.geolocation.getCurrentPosition(initMap, error, options);
+window.addEventListener('load', initMap);
+
+
+
 const boxOfficeContainer = document.getElementById('boxOffice');
 if(boxOfficeContainer){
     fetch("js/films.json")
@@ -21,7 +68,7 @@ if(boxOfficeContainer){
         });
 }
 $(document).ready(function(){		
-	let map;
+	/*let map;
 	let userLoc;
 	var markersArray = []; 
 	var marker;
@@ -34,7 +81,7 @@ $(document).ready(function(){
 		timeout: 5000,
 		maximumAge: 0
 	};
-	function success(pos) {	
+	function initMap(pos) {	
 		if (document.getElementById( 'cineMap' ) === null) {
 			return false;
 		} 
@@ -62,36 +109,9 @@ $(document).ready(function(){
 	function error(err) {
 	  console.warn(`ERROR(${err.code}): ${err.message}`);
 	};
-	navigator.geolocation.getCurrentPosition(success, error, options);
-	window.addEventListener('load', success );
+	navigator.geolocation.getCurrentPosition(initMap, error, options);
+	window.addEventListener('load', initMap);*/
 	
-	//output films from films.json
-	/*var request = new XMLHttpRequest();
-	request.open('GET', 'js/films.json', true);
-	request.onload = function() {
-		if (request.status >= 200 && request.status < 400) {
-			// Success!
-			var data = JSON.parse(request.responseText);
-			for (var i = 0; i < data.length; i++) {
-				(function (film) {
-					var filmOutput = `<a href="#mapHolder" class="film-option"><figure>
-							  <img src="${film.picture}" alt="${film.name} Movie Poster">
-							  <figcaption>${film.name}</figcaption>
-							  </figure></a>`;
-					$("#boxOffice").append(filmOutput);
-				})(data[i]);
-			}			  
-		} else {console.log("Error returned");}};
-	request.onerror = function() {console.log("Complete Error");};
-	request.send();*/
-	//hamburger navigation
-	$('.hamburger').parent().click(function(){
-		$("nav").addClass("is-showing");
-		
-	});	
-	$("nav .close").click(function(){
-		$("nav").removeClass("is-showing");
-	});
 	//search functionality and get markers from cinemas.json
 	function showMap(){
 		$("#boxOffice").hide();
