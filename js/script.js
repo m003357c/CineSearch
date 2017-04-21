@@ -5,6 +5,22 @@ if ('serviceWorker' in navigator) {
 		console.log('Service worker registration failed: ', err);
 	});
 }
+const boxOfficeContainer = document.getElementById('boxOffice');
+if(boxOfficeContainer){
+    fetch("films.json")
+        .then(response => {
+            return response.json();
+        }).then(films => {
+	    var filmOutput = 
+            const filmOutput = films.map(event => {
+                return `<a href="#mapHolder" class="film-option"><figure>
+			  <img src="${films.picture}" alt="${films.name} Movie Poster">
+			  <figcaption>${films.name}</figcaption>
+			  </figure></a>`;
+            }).join("\n");            
+            boxOfficeContainer.innerHTML = filmOutput;
+        });
+}
 $(document).ready(function(){		
 	let map;
 	let userLoc;
@@ -51,7 +67,7 @@ $(document).ready(function(){
 	window.addEventListener('load', success );
 	
 	//output films from films.json
-	var request = new XMLHttpRequest();
+	/*var request = new XMLHttpRequest();
 	request.open('GET', 'js/films.json', true);
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
@@ -68,7 +84,7 @@ $(document).ready(function(){
 			}			  
 		} else {console.log("Error returned");}};
 	request.onerror = function() {console.log("Complete Error");};
-	request.send();
+	request.send();*/
 	//hamburger navigation
 	$('.hamburger').parent().click(function(){
 		$("nav").addClass("is-showing");
