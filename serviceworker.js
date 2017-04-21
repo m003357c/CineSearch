@@ -25,6 +25,8 @@ var CACHED_URLS = [
     BASEPATH + 'assets/images/back.png'
 ];
 
+var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap';
+
 self.addEventListener('install', function(event) {
   // Cache everything in CACHED_URLS. Installation will fail if something fails to cache
   event.waitUntil(
@@ -48,6 +50,16 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
+  //Handle offline Google Maps
+  } else if (requestURL.href === googleMapsAPIJS) {
+  event.respondWith(
+    fetch(
+      googleMapsAPIJS+'&'+Date.now(),
+      { mode: 'no-cors', cache: 'no-store' }
+    ).catch(function() {
+      return caches.match('offline-map.js');
+    })
+  );
   // Handle requests for events JSON file
   } else if ((requestURL.pathname === BASEPATH + 'js/films.json') || (requestURL.pathname === BASEPATH + 'js/cinemas.json')) {
     event.respondWith(
