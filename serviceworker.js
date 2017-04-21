@@ -1,4 +1,4 @@
-var CACHE_NAME = 'CineCache';
+/*var CACHE_NAME = 'CineCache';
 var BASEPATH = '/CineSearch/';
 var CACHED_URLS = [
   // Our HTML
@@ -115,4 +115,4 @@ self.addEventListener('activate', function(event) {
       );
     })
   );
-});
+});*/
