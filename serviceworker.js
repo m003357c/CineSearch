@@ -22,33 +22,7 @@ var CACHED_URLS = [
     BASEPATH + 'assets/images/moana-thumb.jpg',
     BASEPATH + 'assets/images/assassin-thumb.jpg',
     BASEPATH + 'assets/images/location.png',
-    BASEPATH + 'assets/images/back.png',
-    //App Icons
-    BASEPATH + 'assets/icons/android-icon-144x144.png',
-    BASEPATH + 'assets/icons/android-icon-192x192.png',
-    BASEPATH + 'assets/icons/android-icon-36x36.png',
-    BASEPATH + 'assets/icons/android-icon-48x48.png',
-    BASEPATH + 'assets/icons/android-icon-72x72.png',
-    BASEPATH + 'assets/icons/android-icon-96x96.png',
-    BASEPATH + 'assets/icons/apple-icon-114x114.png',
-    BASEPATH + 'assets/icons/apple-icon-120x120.png',
-    BASEPATH + 'assets/icons/apple-icon-144x144.png',
-    BASEPATH + 'assets/icons/apple-icon-152x152.png',
-    BASEPATH + 'assets/icons/apple-icon-180x180.png',
-    BASEPATH + 'assets/icons/apple-icon-57x57.png',
-    BASEPATH + 'assets/icons/apple-icon-60x60.png',
-    BASEPATH + 'assets/icons/apple-icon-72x72.png',
-    BASEPATH + 'assets/icons/apple-icon-76x76.png',
-    BASEPATH + 'assets/icons/apple-icon-precomposed.png',
-    BASEPATH + 'assets/icons/apple-icon.png',
-    BASEPATH + 'assets/icons/favicon-16x16.png',
-    BASEPATH + 'assets/icons/favicon-32x32.png',
-    BASEPATH + 'assets/icons/favicon-96x96.png',
-    BASEPATH + 'assets/icons/favicon.ico',
-    BASEPATH + 'assets/icons/ms-icon-144x144.png',
-    BASEPATH + 'assets/icons/ms-icon-150x150.png',
-    BASEPATH + 'assets/icons/ms-icon-310x310.png',
-    BASEPATH + 'assets/icons/ms-icon-70x70.png'
+    BASEPATH + 'assets/images/back.png'
 ];
 
 self.addEventListener('install', function(event) {
