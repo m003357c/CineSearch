@@ -142,7 +142,7 @@ header{
 .tallMap #cineMap{
 	transform: none;
 }
-#cineMap.offline-map {
+#cineMap{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
