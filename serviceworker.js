@@ -11,6 +11,7 @@ var CACHED_URLS = [
     BASEPATH +  'js/films.json',
     BASEPATH +  'js/cinemas.json',
     BASEPATH +  'js/script.js',
+    BASEPATH +  'js/offline-map.js',
     'https://code.jquery.com/jquery-3.2.1.min.js',
   // Images
     BASEPATH + 'assets/images/fantastic-thumb.jpg',
@@ -57,7 +58,7 @@ self.addEventListener('fetch', function(event) {
       googleMapsAPIJS+'&'+Date.now(),
       { mode: 'no-cors', cache: 'no-store' }
     ).catch(function() {
-      return caches.match('offline-map.js');
+      return caches.match('js/offline-map.js');
     })
   );
   // Handle requests for events JSON file
