@@ -10,9 +10,7 @@ let map;
 let userLoc;
 var markersArray = []; 
 var marker;
-var infoWindow = new google.maps.InfoWindow({
-			content: ''
-		 });
+
 
 let options = {
 	enableHighAccuracy: true,
@@ -56,7 +54,9 @@ function error(err) {
 };
 navigator.geolocation.getCurrentPosition(initMap, error, options);
 window.addEventListener('load', initMap);
-
+var infoWindow = new google.maps.InfoWindow({
+			content: ''
+		 });
 
 
 const boxOfficeContainer = document.getElementById('boxOffice');
