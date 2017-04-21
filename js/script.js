@@ -5,6 +5,21 @@ if ('serviceWorker' in navigator) {
 		console.log('Service worker registration failed: ', err);
 	});
 }
+const boxOfficeContainer = document.getElementById('boxOffice');
+if(boxOfficeContainer){
+    fetch("js/films.json")
+        .then(response => {
+            return response.json();
+        }).then(films => {
+            const filmOutput = films.map(film => {
+                return `<a href="#mapHolder" class="film-option"><figure>
+			  <img src="${film.picture}" alt="${film.name} Movie Poster">
+			  <figcaption>${film.name}</figcaption>
+			  </figure></a>`;
+            }).join("\n");            
+            boxOfficeContainer.innerHTML = filmOutput;
+        });
+}
 
 let map;
 let userLoc;
@@ -60,21 +75,6 @@ var infoWindow = new google.maps.InfoWindow({
 		 });
 
 
-const boxOfficeContainer = document.getElementById('boxOffice');
-if(boxOfficeContainer){
-    fetch("js/films.json")
-        .then(response => {
-            return response.json();
-        }).then(films => {
-            const filmOutput = films.map(film => {
-                return `<a href="#mapHolder" class="film-option"><figure>
-			  <img src="${film.picture}" alt="${film.name} Movie Poster">
-			  <figcaption>${film.name}</figcaption>
-			  </figure></a>`;
-            }).join("\n");            
-            boxOfficeContainer.innerHTML = filmOutput;
-        });
-}
 $(document).ready(function(){		
 	/*let map;
 	let userLoc;
@@ -282,6 +282,7 @@ $(document).ready(function(){
 						
 						$(".film-times-inner").append(filmTimes);
 						$(".film-list-land td:contains('undefined')").empty();
+						$(".film-list-port .dropdown-menu li:contains('undefined')").remove();
 					})(data[i]);
 				}			  
 			} else {			    
