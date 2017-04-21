@@ -19,7 +19,7 @@ var CACHED_URLS = [
     BASEPATH + 'assets/images/rogue-thumb.jpg',
     BASEPATH + 'assets/images/passenger-thumb.jpg',
     BASEPATH + 'assets/images/sully-thumb.jpg',
-    BASEPATH + 'assets/images/maona-thumb.jpg',
+    BASEPATH + 'assets/images/moana-thumb.jpg',
     BASEPATH + 'assets/images/assassin-thumb.jpg'
 ];
 
