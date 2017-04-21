@@ -11,56 +11,56 @@
       "name": "Doctor Strange",
       "picture": "assets/images/strange-thumb.jpg",
        "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["14:15","15:15","21:00"],
+            "standard": ["13:45","15:00","16:30","17:30"]
         }
     },
     {
       "name": "Arrival",
       "picture": "assets/images/arrival-thumb.jpg",
       "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["n/a"],
+            "standard": ["18:00","20:40"]
        }
     },
     {
       "name": "Star Wars: Rogue One",
       "picture": "assets/images/rogue-thumb.jpg",
       "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["13:00"],
+            "standard": ["14:40","16:00","17:10"]
        }
     },
     {
       "name": "Passengers",
       "picture": "assets/images/passenger-thumb.jpg",
       "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["12:20","16:15","18:20"],
+            "standard": ["11:30","12:50","14:15","19:45"]
         }
     },
     {
       "name": "Sully",
       "picture": "assets/images/sully-thumb.jpg",
        "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["12:20","16:40"],
+            "standard": ["11:30","14:20","18:10"]
         }
     },
     {
       "name": "Moana",
       "picture": "assets/images/moana-thumb.jpg",
        "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["13:00"],
+            "standard": ["11:45","13:10","14:20","15:45","16:10"]
         }
     },
     {
       "name": "Assassins Creed",
       "picture": "assets/images/assassin-thumb.jpg",
        "times": { 
-            "td": ["13:00","16:15","19:45"],
-            "standard": ["11:30","12:00","14:00","14:45","15:30"]
+            "td": ["n/a"],
+            "standard": ["15:30","17:20"]
         }
     }
 ]
