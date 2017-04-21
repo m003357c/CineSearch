@@ -23,11 +23,11 @@ function initMap(pos) {
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	} 
-	let latitude  = pos.coords.latitude;
-	let longitude = pos.coords.longitude;
+	let lat  = pos.coords.latitude;
+	let long = pos.coords.longitude;
 
 	//latitude and longitude for Mellor building  
-	userLoc = new google.maps.LatLng(latitude, longitude); 
+	userLoc = new google.maps.LatLng(lat, long); 
 	//set up mapOptions (Zoom = 0 - zoomed out)  
 	var mapOptions = {   
 		zoom: 12,  
