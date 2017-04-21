@@ -1,1 +1,1 @@
-document.getElementById('mapHolder').classList.add('offline-map');
+document.getElementById('cineMap').classList.add('offline-map');
