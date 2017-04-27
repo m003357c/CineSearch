@@ -35,11 +35,11 @@ function initMap(pos) {
 		scaleControl: true,
 		streetViewControl: false,
 		rotateControl: false,
-		fullscreenControl: false
+		fullscreenControl: false,
+		draggable: true
 	};    
 	//create map using mapOptions 
 	map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
-	map.setOptions({draggable: true});
 
 };
 function error(err) {
