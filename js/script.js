@@ -44,33 +44,28 @@ function success(pos) {
 	};    */
 	//create map using mapOptions 
 	
-	 if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-            map.setCenter(pos);		  
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+			var pos = {
+				lat: position.coords.latitude,
+				lng: position.coords.longitude
+			};
+			map.setCenter(pos);		  
+		}, function() {
+			handleLocationError(true, infoWindow, map.getCenter());
+		});
+		} else {
+		  // Browser doesn't support Geolocation
+		  handleLocationError(false, infoWindow, map.getCenter());
+		}
+	}
 
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-        infoWindow.open(map);
-      }
-	/*let lat  = pos.coords.latitude;
+
+	
+};
+/*let lat  = pos.coords.latitude;
 	let long = pos.coords.longitude;
 	var userLoc = new google.maps.LatLng(lat, long); */
-};
 /*function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 };
