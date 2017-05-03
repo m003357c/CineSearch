@@ -40,7 +40,9 @@ function initMap(pos) {
 	};    
 	//create map using mapOptions 
 	map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
-
+	var infoWindow = new google.maps.InfoWindow({
+				content: ''
+			 });
 };
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
@@ -48,9 +50,7 @@ function error(err) {
 navigator.geolocation.getCurrentPosition(initMap, error, options);
 window.addEventListener('load', initMap);
 
-var infoWindow = new google.maps.InfoWindow({
-			content: ''
-		 });
+
 
 const boxOfficeContainer = document.getElementById('boxOffice');
 if(boxOfficeContainer){
