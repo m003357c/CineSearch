@@ -62,76 +62,62 @@ if(boxOfficeContainer){
             boxOfficeContainer.innerHTML = filmOutput;
         });
 }
-function showMap(){
-	document.getElementById('boxOffice').style.display = "none";
-	//$("#boxOffice").hide();
-	var mapContainer = document.getElementsByClassName('container');
-	var mapHolder = document.getElementById('mapHolder');
-	if(mapContainer.classList){
-		this.add('tallMap');
-	} else{
-		this.className += ' ' + 'tallMap';
-	}
-	if(mapHolder.classList){
-		this.add('tallMap');
-	} else{
-		this.className += ' ' + 'tallMap';
-	}
-	//$("#mapHolder, .container").addClass("tallMap");
 
-	$("#searchBox").addClass("absoluteSearch");
-	setTimeout(function(){			
-		$(".top-bar li img").addClass("is-showing");
-
-		var center = map.getCenter();
-		google.maps.event.trigger(map, "resize");
-		map.setCenter(center);
-
-		var request = new XMLHttpRequest();
-		request.open('GET', 'js/cinemas.json', true);
-
-		request.onload = function() {
-			var infoWindow = new google.maps.InfoWindow({
-						content: ''
-					 });
-			if (request.status >= 200 && request.status < 400) {
-				// Success!
-				var data = JSON.parse(request.responseText);
-				for (var i = 0; i < data.length; i++) {
-					(function (cinema) {
-						marker = new google.maps.Marker({
-							position: new google.maps.LatLng(cinema.latitude,cinema.longitude),
-							map: map,
-							icon: "assets/images/cinesearch-map-icon.png",
-							visible: true
-						});
-						//register for click events on info window
-						google.maps.event.addListener(marker, 'click', function() { 
-							infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
-									      '<p><span class="cineLoc">' + cinema.location +'</span><em> ' + cinema.address + '</em></p>' +
-									      '<a href="#" class="btn viewing-times-link">Viewing Times</a>');
-							infoWindow.open(map, this);
-						});
-						markersArray.push(marker);
-					})(data[i]);
-				}			  
-			} else {
-			    // We reached our target server, but it returned an error
-				console.log("Error returned");
-
-			}
-		};
-
-		request.onerror = function() {
-			// There was a connection error of some sort
-			console.log("Complete Error");
-		};
-		request.send();
-	}, 500);	
-}
 $(document).ready(function(){		
 	//search functionality and get markers from cinemas.json
-	
+	function showMap(){
+		$("#boxOffice").hide();
+		$("#mapHolder, .container").addClass("tallMap");
+		$("#searchBox").addClass("absoluteSearch");
+		setTimeout(function(){			
+			$(".top-bar li img").addClass("is-showing");
+
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+
+			var request = new XMLHttpRequest();
+			request.open('GET', 'js/cinemas.json', true);
+
+			request.onload = function() {
+				var infoWindow = new google.maps.InfoWindow({
+							content: ''
+						 });
+				if (request.status >= 200 && request.status < 400) {
+					// Success!
+					var data = JSON.parse(request.responseText);
+					for (var i = 0; i < data.length; i++) {
+						(function (cinema) {
+							marker = new google.maps.Marker({
+								position: new google.maps.LatLng(cinema.latitude,cinema.longitude),
+								map: map,
+								icon: "assets/images/cinesearch-map-icon.png",
+								visible: true
+							});
+							//register for click events on info window
+							google.maps.event.addListener(marker, 'click', function() { 
+								infoWindow.setContent('<h1>' + cinema.name +'</h1>'+
+										      '<p><span class="cineLoc">' + cinema.location +'</span><em> ' + cinema.address + '</em></p>' +
+										      '<a href="#" class="btn viewing-times-link">Viewing Times</a>');
+								infoWindow.open(map, this);
+							});
+							markersArray.push(marker);
+						})(data[i]);
+					}			  
+				} else {
+				    // We reached our target server, but it returned an error
+					console.log("Error returned");
+
+				}
+			};
+
+			request.onerror = function() {
+				// There was a connection error of some sort
+				console.log("Complete Error");
+			};
+			request.send();
+		}, 500);	
+	}
 	$("#searchBox .btn").click(showMap);
 	$("body").on("click","a.search",showMap);
 	
