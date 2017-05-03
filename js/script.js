@@ -21,11 +21,6 @@ function success(pos) {
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	} 
-	let lat  = pos.coords.latitude;
-	let long = pos.coords.longitude;
-
-	//latitude and longitude for Mellor building  
-	userLoc = new google.maps.LatLng(lat, long); 
 	//set up mapOptions (Zoom = 0 - zoomed out)  
 	var mapOptions = {   
 		zoom: 12,  
@@ -40,6 +35,11 @@ function success(pos) {
 	};    
 	//create map using mapOptions 
 	map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
+	let lat  = pos.coords.latitude;
+	let long = pos.coords.longitude;
+
+	//latitude and longitude for Mellor building  
+	userLoc = new google.maps.LatLng(lat, long); 
 	var infoWindow = new google.maps.InfoWindow({
 				content: ''
 			 });
