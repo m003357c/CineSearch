@@ -100,8 +100,8 @@ header{
 	color: #f2b632;
 	font-size: 21px;
 	letter-spacing: 2px;
-	margin-bottom: none;
-	text-transform: normal;
+	margin-bottom: 0;
+	text-transform: none;
 }	
 .top-bar li:nth-child(3){
 	text-align: right;
