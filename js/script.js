@@ -67,8 +67,16 @@ function showMap(){
 	//$("#boxOffice").hide();
 	var mapContainer = document.getElementsByClassName('container');
 	var mapHolder = document.getElementById('mapHolder');
-	mapContainer.classList.add("tallMap");
-	mapHolder.classList.add("tallMap");
+	if(mapContainer.classList){
+		this.add('tallMap');
+	} else{
+		this.className += ' ' + 'tallMap';
+	}
+	if(mapHolder.classList){
+		this.add('tallMap');
+	} else{
+		this.className += ' ' + 'tallMap';
+	}
 	//$("#mapHolder, .container").addClass("tallMap");
 
 	$("#searchBox").addClass("absoluteSearch");
