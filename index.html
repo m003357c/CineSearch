@@ -41,6 +41,15 @@
 		<div id="cineMap">
 		
 		</div> 
+		  <script>
+		      function initMap() {			      
+			var defaultLoc = {lat: 53.010571, lng: -2.179801};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 13,
+			  center: defaultLoc
+			});
+		      }
+		    </script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap"></script>
 	  </div>
 	  <article id="searchBox" class="box">
