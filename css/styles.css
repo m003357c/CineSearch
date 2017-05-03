@@ -93,12 +93,14 @@ header{
 .top-bar li:nth-child(2){
 	width: 80%;
 	text-align: center;
-	color: #f2b632;
-	font-size: 21px;
-	letter-spacing: 2px;
 	padding-left: 0;
 	box-sizing: border-box;
 }
+.top-bar li h1{
+	color: #f2b632;
+	font-size: 21px;
+	letter-spacing: 2px;
+}	
 .top-bar li:nth-child(3){
 	text-align: right;
 }
