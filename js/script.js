@@ -65,8 +65,8 @@ if(boxOfficeContainer){
 function showMap(){
 	document.getElementById('boxOffice').style.display = "none";
 	//$("#boxOffice").hide();
-	document.getElementsByClassName('container').classList.add("tallMap");
-	document.getElementById('mapHolder').classList.add("tallMap");
+	document.getElementsByClassName('container').classList.add(tallMap);
+	document.getElementById('mapHolder').classList.add(tallMap);
 	
 	//$("#mapHolder, .container").addClass("tallMap");
 
