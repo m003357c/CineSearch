@@ -6,9 +6,8 @@ if ('serviceWorker' in navigator) {
 	});
 }
 let map;
-let userLoc;
-var markersArray = []; 
-var marker;
+const markersArray = []; 
+let marker;
 let options = {
 	enableHighAccuracy: true,
 	timeout: 5000,
@@ -34,11 +33,10 @@ function success(pos) {
 	};    
 	//create map using mapOptions 
 	map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
+	
 	let lat  = pos.coords.latitude;
 	let long = pos.coords.longitude;
-
-	//latitude and longitude for Mellor building  
-	userLoc = new google.maps.LatLng(lat, long); 
+	var userLoc = new google.maps.LatLng(lat, long); 
 };
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
