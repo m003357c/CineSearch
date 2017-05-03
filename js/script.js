@@ -63,50 +63,6 @@ if(boxOfficeContainer){
         });
 }
 $(document).ready(function(){		
-	/*let map;
-	let userLoc;
-	var markersArray = []; 
-	var marker;
-	var infoWindow = new google.maps.InfoWindow({
-				content: ''
-			 });
-	
-	let options = {
-		enableHighAccuracy: true,
-		timeout: 5000,
-		maximumAge: 0
-	};
-	function initMap(pos) {	
-		if (document.getElementById( 'cineMap' ) === null) {
-			return false;
-		} 
-		let latitude  = pos.coords.latitude;
-		let longitude = pos.coords.longitude;
-
-		//latitude and longitude for Mellor building  
-		userLoc = new google.maps.LatLng(latitude, longitude); 
-		//set up mapOptions (Zoom = 0 - zoomed out)  
-		var mapOptions = {   
-			zoom: 12,  
-			center: userLoc,
-			zoomControl: true,
-			mapTypeControl: false,
-			scaleControl: true,
-			streetViewControl: false,
-			rotateControl: false,
-			fullscreenControl: false
-		};    
-		//create map using mapOptions 
-		map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
-		map.setOptions({draggable: true});
-		
-	};
-	function error(err) {
-	  console.warn(`ERROR(${err.code}): ${err.message}`);
-	};
-	navigator.geolocation.getCurrentPosition(initMap, error, options);
-	window.addEventListener('load', initMap);*/
-	
 	//search functionality and get markers from cinemas.json
 	function showMap(){
 		$("#boxOffice").hide();
@@ -304,24 +260,4 @@ $(document).ready(function(){
 		$(".date-controls.active").removeClass("active");
 		$(this).addClass("active");
 	});
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 });
