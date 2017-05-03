@@ -17,7 +17,7 @@ let options = {
 	maximumAge: 0
 };
 
-function initMap(pos) {	
+function success(pos) {	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	} 
@@ -47,8 +47,8 @@ function initMap(pos) {
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 };
-navigator.geolocation.getCurrentPosition(initMap, error, options);
-window.addEventListener('load', initMap);
+navigator.geolocation.getCurrentPosition(success, error, options);
+window.addEventListener('load', success);
 
 
 
