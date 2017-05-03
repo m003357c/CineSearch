@@ -19,8 +19,7 @@ function success(pos) {
 		return false;
 	}  
 	var defaultLoc = {lat: 53.010596, lng: -2.179887}
-	//set up mapOptions (Zoom = 0 - zoomed out)  
-	var mapOptions = {   
+	map = new google.maps.Map(document.getElementById('cineMap' ),{
 		zoom: 12,  
 		center: defaultLoc,
 		zoomControl: true,
@@ -30,19 +29,53 @@ function success(pos) {
 		rotateControl: false,
 		fullscreenControl: false,
 		draggable: true
-	};    
+	});
+	//set up mapOptions (Zoom = 0 - zoomed out)  
+	/*var mapOptions = {   
+		zoom: 12,  
+		center: defaultLoc,
+		zoomControl: true,
+		mapTypeControl: false,
+		scaleControl: true,
+		streetViewControl: false,
+		rotateControl: false,
+		fullscreenControl: false,
+		draggable: true
+	};    */
 	//create map using mapOptions 
-	map = new google.maps.Map(document.getElementById('cineMap' ), mapOptions);
 	
-	let lat  = pos.coords.latitude;
+	 if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            map.setCenter(pos);		  
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+	/*let lat  = pos.coords.latitude;
 	let long = pos.coords.longitude;
-	var userLoc = new google.maps.LatLng(lat, long); 
+	var userLoc = new google.maps.LatLng(lat, long); */
 };
-function error(err) {
+/*function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 };
 navigator.geolocation.getCurrentPosition(success, error, options);
-window.addEventListener('load', success);
+window.addEventListener('load', success);*/
 
 
 
