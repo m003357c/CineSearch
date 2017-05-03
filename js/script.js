@@ -62,7 +62,7 @@ function success(pos) {
 
 
 	
-};
+
 /*let lat  = pos.coords.latitude;
 	let long = pos.coords.longitude;
 	var userLoc = new google.maps.LatLng(lat, long); */
