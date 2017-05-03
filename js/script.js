@@ -18,11 +18,12 @@ let options = {
 function success(pos) {	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
-	} 
+	}  
+	var defaultLoc = {lat: 53.010596, lng: -2.179887}
 	//set up mapOptions (Zoom = 0 - zoomed out)  
 	var mapOptions = {   
 		zoom: 12,  
-		center: userLoc,
+		center: defaultLoc,
 		zoomControl: true,
 		mapTypeControl: false,
 		scaleControl: true,
