@@ -5,8 +5,6 @@ if ('serviceWorker' in navigator) {
 		console.log('Service worker registration failed: ', err);
 	});
 }
-
-
 let map;
 let userLoc;
 var markersArray = []; 
@@ -40,9 +38,6 @@ function success(pos) {
 
 	//latitude and longitude for Mellor building  
 	userLoc = new google.maps.LatLng(lat, long); 
-	var infoWindow = new google.maps.InfoWindow({
-				content: ''
-			 });
 };
 function error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
@@ -129,6 +124,9 @@ $(document).ready(function(){
 			request.open('GET', 'js/cinemas.json', true);
 
 			request.onload = function() {
+				var infoWindow = new google.maps.InfoWindow({
+							content: ''
+						 });
 				if (request.status >= 200 && request.status < 400) {
 					// Success!
 					var data = JSON.parse(request.responseText);
