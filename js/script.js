@@ -18,7 +18,7 @@ function success(pos) {
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	}  
-	var defaultLoc = {lat: 53.010596, lng: -2.179887}
+	var defaultLoc = {lat: 53.010596, lng: -2.179887};
 	map = new google.maps.Map(document.getElementById('cineMap' ),{
 		zoom: 12,  
 		center: defaultLoc,
