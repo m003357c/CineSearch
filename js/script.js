@@ -65,7 +65,10 @@ if(boxOfficeContainer){
 function showMap(){
 	document.getElementById('boxOffice').style.display = "none";
 	//$("#boxOffice").hide();
-	$("#mapHolder, .container").addClass("tallMap");
+	document.getElementsByClassName('container').classList.add("tallMap");
+	document.getElementById('mapHolder').classList.add("tallMap");
+	
+	//$("#mapHolder, .container").addClass("tallMap");
 
 	$("#searchBox").addClass("absoluteSearch");
 	setTimeout(function(){			
