@@ -252,6 +252,7 @@ figure{
 	margin:0 0 15px 0;
 	float: left;
 	overflow: hidden;
+	text-align: center;
 }	
 #boxOffice a:nth-child(odd) figure{
 	padding-right: 10px;
@@ -506,7 +507,7 @@ figcaption{
 	    margin: 0 auto;
 	}
 	#searchBox .filmSearch a.btn {
-		padding: 5px 40px;
+	    padding: 5px 40px;
 	}
 	.absoluteSearch {
 	    bottom: 220px;
@@ -526,9 +527,8 @@ figcaption{
 	    font-size: 34px;
 	}
 	figure {
-		width: 25%;
-		text-align: center;
-		margin: 20px 0 10px 0;
+	     width: 33%;
+	     margin: 20px 0 10px 0;
 	}
 	figcaption {
 	    font-size: 1rem;
@@ -555,4 +555,11 @@ figcaption{
 	    -moz-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
 	    box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
 	}	
+}
+@media (min-width: 830px){
+	figure {
+		width: 25%;
+		text-align: center;
+		margin: 20px 0 10px 0;
+	}
 }
