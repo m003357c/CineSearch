@@ -51,7 +51,7 @@ function success(pos) {
 				lng: position.coords.longitude
 			};
 			map.setCenter(pos);		  
-		}
+		});
 	}
 }
 
