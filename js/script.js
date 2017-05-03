@@ -66,9 +66,9 @@ function showMap(){
 	document.getElementById('boxOffice').style.display = "none";
 	//$("#boxOffice").hide();
 	var mapContainer = document.getElementsByClassName('container');
-	var mapHolder = document.getElementById('mapHolder').classList.add(tallMap);
-	mapContainer.classList.add(tallMap);
-	mapHolder.classList.add(tallMap);
+	var mapHolder = document.getElementById('mapHolder');
+	mapContainer.classList.add("tallMap");
+	mapHolder.classList.add("tallMap");
 	//$("#mapHolder, .container").addClass("tallMap");
 
 	$("#searchBox").addClass("absoluteSearch");
