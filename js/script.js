@@ -59,7 +59,7 @@ function success(pos) {
 		  handleLocationError(false, infoWindow, map.getCenter());
 		}
 	}
-
+}
 
 	
 
