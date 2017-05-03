@@ -13,7 +13,6 @@ let options = {
 	timeout: 5000,
 	maximumAge: 0
 };
-
 function initMap() {	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
@@ -30,20 +29,6 @@ function initMap() {
 		fullscreenControl: false,
 		draggable: true
 	});
-	//set up mapOptions (Zoom = 0 - zoomed out)  
-	/*var mapOptions = {   
-		zoom: 12,  
-		center: defaultLoc,
-		zoomControl: true,
-		mapTypeControl: false,
-		scaleControl: true,
-		streetViewControl: false,
-		rotateControl: false,
-		fullscreenControl: false,
-		draggable: true
-	};    */
-	//create map using mapOptions 
-	
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function(position) {
 			var pos = {
@@ -54,19 +39,6 @@ function initMap() {
 		});
 	}
 }
-
-	
-
-/*let lat  = pos.coords.latitude;
-	let long = pos.coords.longitude;
-	var userLoc = new google.maps.LatLng(lat, long); */
-/*function error(err) {
-  console.warn(`ERROR(${err.code}): ${err.message}`);
-};
-navigator.geolocation.getCurrentPosition(success, error, options);
-window.addEventListener('load', success);*/
-
-
 
 const boxOfficeContainer = document.getElementById('boxOffice');
 if(boxOfficeContainer){
