@@ -14,7 +14,7 @@ let options = {
 	maximumAge: 0
 };
 
-function success(pos) {	
+function initMap() {	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	}  
