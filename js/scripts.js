@@ -128,12 +128,12 @@ $(document).ready(function(){
 					"<p><a href='#' class='btn search'>Search</a><a href='#' class='btn cancel-search'>Cancel</a></p>" +
 				     "</div>";
 		$("#searchBox").append(filmSearchHTML);	
-		/*e.preventDefault();
+		e.preventDefault();
 		var target = this.hash;
 		$target = $(target);
 		$('html, body').stop().animate({'scrollTop': $target.offset().top}, 900, 'swing', function(){
 			window.location.hash = target;
-		});*/
+		});
 	});
 	$("body").on("click","a.cancel-search",function() {
 		$("a.film-search").removeClass("film-search");
