@@ -219,8 +219,8 @@ $(document).ready(function(){
 								  '</div>';
 						
 						$(".film-times-inner").append(filmTimes);
-						$(".film-list-land td:contains('undefined')").empty();
-						$(".film-list-port .dropdown-menu li:contains('undefined')").remove();
+						$(".film-out td:contains('undefined')").empty();
+						$(".film-out .dropdown-menu li:contains('undefined')").remove();
 					})(data[i]);
 				}			  
 			} else {			    
