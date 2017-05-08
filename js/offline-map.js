@@ -87,13 +87,9 @@ document.getElementById('searchBox').innerHTML = offlineSearch;
 
 var value = document.getElementsByTagName("li").value;
 
-var lists = document.getElementsByTagName("ul");
+var lists = document.getElementsByTagName("li");
 for (var i = 0; i < lists.length; ++i) {
-    var items = lists[i].getElementsByTagName("li");
-    for (var j = 0; j < items.length; ++j) {
-        // do something with items[j]
-        if(this.value === "undefined"){
-            this.parentNode.removeChild(this);
-        }
+    if(lists[i].value == "undefined"){
+        this.parentNode.removeChild(this);
     }
 }
