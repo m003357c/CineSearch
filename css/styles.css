@@ -2,11 +2,8 @@
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: normal;
 	color: #f2b632;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none; 
-	-moz-user-select: none; 
-	-ms-user-select: none;
+	tap-highlight-color: rgba(0,0,0,0);
+	touch-callout: none;
 	user-select: none;	
 }
 :root{
