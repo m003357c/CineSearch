@@ -1,5 +1,6 @@
 [
     {
+        "id": "fantasticbeasts",
         "name": "Fantastic Beasts",
         "picture": "assets/images/fantastic-thumb.jpg",
         "times": { 
@@ -8,6 +9,7 @@
         }
     },
     {
+      "id": "doctorstrange",
       "name": "Doctor Strange",
       "picture": "assets/images/strange-thumb.jpg",
        "times": { 
@@ -16,6 +18,7 @@
         }
     },
     {
+      "id": "arrival",
       "name": "Arrival",
       "picture": "assets/images/arrival-thumb.jpg",
       "times": { 
@@ -24,6 +27,7 @@
        }
     },
     {
+      "id": "starwars",
       "name": "Star Wars: Rogue One",
       "picture": "assets/images/rogue-thumb.jpg",
       "times": { 
@@ -32,6 +36,7 @@
        }
     },
     {
+      "id": "passenger",
       "name": "Passengers",
       "picture": "assets/images/passenger-thumb.jpg",
       "times": { 
@@ -40,6 +45,7 @@
         }
     },
     {
+      "id": "sully",
       "name": "Sully",
       "picture": "assets/images/sully-thumb.jpg",
        "times": { 
@@ -48,6 +54,7 @@
         }
     },
     {
+      "id": "moana",
       "name": "Moana",
       "picture": "assets/images/moana-thumb.jpg",
        "times": { 
@@ -56,6 +63,7 @@
         }
     },
     {
+      "id": "assassinscreed",
       "name": "Assassins Creed",
       "picture": "assets/images/assassin-thumb.jpg",
        "times": { 
