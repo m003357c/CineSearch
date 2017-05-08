@@ -1,8 +1,8 @@
 document.getElementById('cineMap').classList.add('offline-map');
 document.getElementById('boxOffice').innerHTML = '';
 
-const boxOfficeContainer = document.getElementById('boxOffice');
-if(boxOfficeContainer){
+const offlineBoxOffice = document.getElementById('boxOffice');
+if(offlineBoxOffice){
     fetch("js/films.json")
         .then(response => {
             return response.json();
@@ -69,7 +69,7 @@ if(boxOfficeContainer){
                           </div>
                         </div>`;
             }).join("\n");            
-            boxOfficeContainer.innerHTML = filmOutput;
+            offlineBoxOffice.innerHTML = filmOutput;
         });
 }
 
