@@ -62,8 +62,6 @@ header{
 	background: #252839;
 	max-height: 55px;
 	padding: 20px 25px;
-	-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.35);
 }
 .top-bar ul, nav ul{
@@ -126,8 +124,6 @@ header{
 	-webkit-transition: height 1s ease-in-out;
 	-moz-transition: height 1s ease-in-out;
 	transition: height 1s ease-in-out;
-	-webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
 }
 #cineMap{
@@ -165,8 +161,6 @@ header{
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
 	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
 }	
 .absoluteSearch{
@@ -303,8 +297,6 @@ figcaption{
 	right: 20px;
 	height: calc(100vh - 100px);
 	z-index: 9000;
-	-webkit-box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 0px 25px rgba(0,0,0,0.5);
 }
 #filmTimes .btn-close{
@@ -322,8 +314,6 @@ figcaption{
 	-webkit-transform: scaleY(0.7);
 	-moz-transform: scaleY(0.7);
 	transform: scaleY(0.7);
-	-webkit-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.35);
 }	
 .film-times-inner {
@@ -574,8 +564,6 @@ figcaption{
 	    left: 80px;
 	    right: 80px;
 	    height: calc(100vh - 160px);
-	    -webkit-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
-	    -moz-box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
 	    box-shadow: 0px 0px 0px 85px rgba(0,0,0,0.5);
 	}	
 }
