@@ -183,10 +183,9 @@ header{
 	font-weight: 300;
 	font-size: 24px;
 }
-#searchBox h2 strong{
+#searchBox h2 strong, #searchBox p{
 	color: #252839;	
 }
-
 .append-form input{
 	margin-right: -5px;	
 	height: 40px;
@@ -219,7 +218,6 @@ a.btn{
 	line-height: 30px;
 }
 #searchBox a.btn:first-child{
-	/*border-right: 2px solid #f2b632;	*/
 	margin-right: 2px;
 }
 a.btn img{
