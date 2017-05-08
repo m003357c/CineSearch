@@ -1,6 +1,8 @@
 document.getElementById('cineMap').classList.add('offline-map');
 document.getElementById('boxOffice').innerHTML = '';
 
+var offlineFilm = JSON.parse(localStorage.getItem('lastVisited'));
+
 const offlineBoxOffice = document.getElementById('boxOffice');
 if(offlineBoxOffice){
     fetch("js/films.json")
@@ -8,6 +10,7 @@ if(offlineBoxOffice){
             return response.json();
         }).then(films => {
             const filmOutput = films.map(film => {
+                if(film ==
                 return `<div class="film-list-land">
                           <div class="film-out">
                             <div class="film-thumb">
@@ -89,7 +92,7 @@ if(offlineBoxOffice){
 var offlineSearch = '<h2>You are offline</h2><p>The films and times below are from your previous search</p>';
 document.getElementById('searchBox').innerHTML = offlineSearch;
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $(".film-list-land td:contains('undefined')").empty();
     $(".film-list-port .dropdown-menu li:contains('undefined')").remove();
-});
+});*/
