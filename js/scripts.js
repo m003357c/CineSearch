@@ -13,7 +13,7 @@ let options = {
 	timeout: 5000,
 	maximumAge: 0
 };
-function initMap() {	
+window.initMap = function(){	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	}  
