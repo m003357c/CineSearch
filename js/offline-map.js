@@ -2,6 +2,7 @@ document.getElementById('cineMap').classList.add('offline-map');
 document.getElementById('boxOffice').innerHTML = '';
 
 var offlineFilm = JSON.parse(localStorage.getItem('lastVisited'));
+console.log(offlineFilm);
 
 const offlineBoxOffice = document.getElementById('boxOffice');
 if(offlineBoxOffice){
