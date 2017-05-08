@@ -492,7 +492,12 @@ figcaption{
 	}
 }
 @media (min-width: 460px){
-		
+	#boxOffice .film-list-port{
+		width: 100%;
+	}
+	#boxOffice .film-out{
+		max-width: 320px;	
+	}
 }
 @media (min-width: 767px){
 	#mapHolder {
@@ -523,6 +528,10 @@ figcaption{
 	#searchBox label, #searchBox h2 {
 	    margin: 0 0 20px 0;
 	    font-size: 34px;
+	}
+	#boxOffice .film-list-port{
+		width: 50%;
+		float: left;
 	}
 	figure {
 	     width: 33%;
@@ -559,5 +568,8 @@ figcaption{
 		width: 25%;
 		text-align: center;
 		margin: 20px 0 10px 0;
+	}
+	#boxOffice .film-list-port{
+		width: 33%;
 	}
 }
