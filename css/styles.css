@@ -449,18 +449,27 @@ figcaption{
 		float: left;
 		text-align: center;
 	}
+	.films-offline .film-thumb{
+		width: 40%;
+	}
 	.film-thumb img{
 		max-width: 100%;
 	}
-	.film-times{
+	.films-offline .film-times{
 		width: 70%;
-		float: left;
-		padding: 0 10px;
-		box-sizing: border-box;
+	}
+	.film-times {
+	    width: 60%;
+	    float: left;
+	    padding: 0 0 0 20px;
+	    box-sizing: border-box;
 	}
 	.film-times p{
 		border-bottom: 1px solid rgba(255,255,255,0.2);
 	}	
+	.films-offline .film-times p {
+	    border-bottom: none;
+	}
 	.date-controls{
 		text-transform: none;
 		border: 1px solid rgba(255,255,255,0.2);
