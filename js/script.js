@@ -143,11 +143,7 @@ $(document).ready(function(){
 	
 	
 	$("body").on("click","a.viewing-times-link",function() {
-		$("#filmTimes").show();
-		
-		var lastClicked = $(this).parent().child("h1").value();
-		localStorage.setItem('lastVisited', JSON.stringify(lastClicked));
-		
+		$("#filmTimes").show();		
 		var venuName = $(this).parent().children("h1").text();
 		var venuLocation = $(this).parent().children("p").children("span").text();
 		$(".film-times-inner h2").html(venuName + "<br> <small>" + venuLocation + "</small>");
@@ -251,6 +247,9 @@ $(document).ready(function(){
 	$("body").on("click",".dropdown-menu li",function() {
 		var thisTime = $(this).text();
 		$(this).parent().parent().toggleClass("open active").children("a").text(thisTime);
+		
+		var lastClicked = $(this).parent().parent().parent().child("h5").value();
+		localStorage.setItem('lastVisited', JSON.stringify(lastClicked));
 	});
 	$("body").on("click","a.date-controls",function() {
 		$(".date-controls.active").removeClass("active");
