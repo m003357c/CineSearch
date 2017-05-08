@@ -60,8 +60,8 @@ if(offlineBoxOffice){
                                       <li>${film.times.td[0]}</li>
                                       <li>${film.times.td[1]}</li>
                                       <li>${film.times.td[2]}</li>
-                                    </ul>' +
-                                  </li>' +
+                                    </ul>
+                                  </li>
                                   <li class="dropdown">
                                     <a href="#">Standard</a>
                                     <ul class="dropdown-menu">
