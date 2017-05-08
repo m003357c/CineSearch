@@ -85,9 +85,7 @@ if(offlineBoxOffice){
 var offlineSearch = '<h2>You are offline</h2><p>The films and times below are from your previous search</p>';
 document.getElementById('searchBox').innerHTML = offlineSearch;
 
-var lists = document.getElementsByTagName("li");
-for (var i = 0; i < lists.length; ++i) {
-    if(lists[i].value == "undefined"){
-        this.parentNode.removeChild(this);
-    }
-}
+$(document).ready(function(){
+    $(".film-list-land td:contains('undefined')").empty();
+    $(".film-list-port .dropdown-menu li:contains('undefined')").remove();
+});
