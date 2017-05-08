@@ -455,14 +455,14 @@ figcaption{
 	.film-thumb img{
 		max-width: 100%;
 	}
-	.films-offline .film-times{
-		width: 70%;
-	}
 	.film-times {
-	    width: 60%;
+	    width: 70%;
 	    float: left;
 	    padding: 0 0 0 20px;
 	    box-sizing: border-box;
+	}
+	.films-offline .film-times{
+		width: 60%;
 	}
 	.film-times p{
 		border-bottom: 1px solid rgba(255,255,255,0.2);
