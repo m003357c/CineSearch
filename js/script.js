@@ -145,6 +145,9 @@ $(document).ready(function(){
 	$("body").on("click","a.viewing-times-link",function() {
 		$("#filmTimes").show();
 		
+		var lastClicked = $(this).parent().child("h1").value();
+		localStorage.setItem('lastVisited', JSON.stringify(lastClicked));
+		
 		var venuName = $(this).parent().children("h1").text();
 		var venuLocation = $(this).parent().children("p").children("span").text();
 		$(".film-times-inner h2").html(venuName + "<br> <small>" + venuLocation + "</small>");
