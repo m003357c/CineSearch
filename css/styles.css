@@ -31,7 +31,7 @@ body, nav ul{
 	padding: 0;
 }
 #boxOffice:after, .filmSearch p:after, .film-out:after,
-.film-list-land:after, .film-times p:after{
+.film-list-land:after, .film-times p:after, .top-bar ul:after{
 	content: "";
 	display: table;
 	clear: both;
