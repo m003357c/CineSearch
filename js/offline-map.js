@@ -10,7 +10,6 @@ if(offlineBoxOffice){
             return response.json();
         }).then(films => {
             const filmOutput = films.map(film => {
-                if(film ==
                 return `<div class="film-list-land">
                           <div class="film-out">
                             <div class="film-thumb">
