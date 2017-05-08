@@ -30,7 +30,7 @@ body, nav ul{
 	margin: 0;
 	padding: 0;
 }
-#boxOffice:after, .filmSearch p:after, .film-list-port:after,
+#boxOffice:after, .filmSearch p:after, .film-out:after,
 .film-list-land:after, .film-times p:after{
 	content: "";
 	display: table;
@@ -496,7 +496,8 @@ figcaption{
 		width: 100%;
 	}
 	#boxOffice .film-out{
-		max-width: 320px;	
+		max-width: 320px;
+		margin: 0 auto;
 	}
 }
 @media (min-width: 767px){
