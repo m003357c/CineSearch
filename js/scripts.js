@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
 	}).catch(function(err) {
 		console.log('Service worker registration failed: ', err);
 	});
-}
+};
 let map;
 const markersArray = []; 
 let marker;
