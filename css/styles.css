@@ -350,11 +350,80 @@ figcaption{
 .film-list-land, .film-list-port{
 	margin-bottom: 30px;
 }
+.film-thumb{
+	width: 40%;
+	float: left;
+}
+.film-times{
+	width: 60%;
+	float: left;
+	padding: 0 0 0 20px;
+	box-sizing: border-box;
+}
+.film-times p{
+	margin: 15px 0;
+	font-size: 1rem;
+	text-align: center;
+}
+.film-times p a{
+	float: left;	
+	vertical-align: middle;
+	border: 1px solid #fff;
+	padding: 0 5px;
+}
+.film-times p a:last-child{
+	float: right;	
+}
+.film-times ul{
+	margin: 0;
+	padding: 0;
+}
+.film-times li.dropdown{
+	position: relative;
+	list-style-type: none;
+	text-align: center;
+}
+.film-times li a{
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 5px 0;
+	box-sizing: border-box;
+	display: block;
+	margin-bottom: 15px; 
+}
+.film-times .dropdown-menu{
+	display: none;	
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	top: 33px;
+	z-index: 9001;
+}
+.film-times .dropdown-menu li{
+	color: #252839;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+.film-times li.dropdown.open{
+	background: #fff;
+}	
+.film-times li.dropdown.open a{
+	color: #252839;
+}	
+.film-times li.dropdown.open .dropdown-menu{
+	display: block;
+	top: 33px;
+}
+.film-times li.active a{
+	color: #f2b632;
+	border-color: #f2b632;
+}
 @media all and (orientation: portrait) { 
 	.film-list-land{
 		display: none;
 	}		
-	.film-thumb{
+	/*.film-thumb{
 		width: 40%;
 		float: left;
 	}
@@ -422,7 +491,7 @@ figcaption{
 	.film-times li.active a{
 		color: #f2b632;
 		border-color: #f2b632;
-	}
+	}*/
 }
 @media all and (orientation: landscape) { 	
 	.film-list-port{
