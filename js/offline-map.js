@@ -4,8 +4,6 @@ document.getElementById('boxOffice').innerHTML = '';
 var offlineSearch = '<h2>You are offline</h2><p>The films and times below are from your previous search</p>';
 document.getElementById('searchBox').innerHTML = offlineSearch;
 
-var offlineFilm = JSON.parse(localStorage.getItem('lastVisited'));
-
 const offlineBoxOffice = document.getElementById('boxOffice');
 if(boxOfficeContainer){
     fetch("js/films.json")
