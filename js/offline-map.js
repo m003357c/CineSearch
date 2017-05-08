@@ -82,7 +82,7 @@ if(offlineBoxOffice){
 }
 
 
-var offlineSearch = '<h2>You are offline</h2><br><p>The films below are from your previous search</p>';
+var offlineSearch = '<h2>You are offline</h2><p>The films below are from your previous search</p>';
 document.getElementById('searchBox').innerHTML = offlineSearch;
 
 
