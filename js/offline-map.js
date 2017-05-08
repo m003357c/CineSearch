@@ -13,7 +13,7 @@ if(boxOfficeContainer){
             return response.json();
         }).then(films => {
             const filmOutput = films.map(film => {
-                return `<div class="film-list-port" id="${film.id}">
+                return `<div class="film-list-port">
                         <div class="film-out">
                           <div class="film-thumb">
                           <img src="${film.picture}" alt="${film.name} Movie Poster"/>
@@ -23,7 +23,7 @@ if(boxOfficeContainer){
                           <p><a href="#" class="btn date-change">&lt;</a>Today<a href="#" class="btn date-change">&gt;</a></p>
                           <ul>
                             <li class="dropdown">
-                              <a href="#${film.id}">3D</a>
+                              <a href="#">3D</a>
                               <ul class="dropdown-menu">
                                 <li>${film.times.td[0]}</li>
                                 <li>${film.times.td[1]}</li>
