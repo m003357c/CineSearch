@@ -46,3 +46,7 @@ if(boxOfficeContainer){
             offlineBoxOffice.innerHTML = filmOutput;
         });
 }
+$(document).ready(function(){
+    $(".film-out td:contains('undefined')").empty();
+    $(".film-out .dropdown-menu li:contains('undefined')").remove(); 
+});
