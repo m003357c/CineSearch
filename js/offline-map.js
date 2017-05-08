@@ -46,9 +46,3 @@ if(boxOfficeContainer){
             offlineBoxOffice.innerHTML = filmOutput;
         });
 }
-
-function prevent(e){
-      e.preventDefault();
-}
-document.getElementsTagName("a").addEventListener("click", prevent);
-
