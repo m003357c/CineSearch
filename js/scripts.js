@@ -4,9 +4,9 @@ if ('serviceWorker' in navigator) {
 	}).catch(function(err) {
 		console.log('Service worker registration failed: ', err);
 	});
-};
+}
+const markersArray = [];
 let map;
-const markersArray = []; 
 let marker;
 let options = {
 	enableHighAccuracy: true,
