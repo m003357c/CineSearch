@@ -77,8 +77,6 @@ header{
 .top-bar ul li img{
 	vertical-align: middle;
 	opacity: 0;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 .top-bar ul li img.is-showing{
@@ -121,8 +119,6 @@ header{
 	-moz-transform: skewY(-6deg);
 	transform: skewY(-6deg);
 	transform-origin: top left;
-	-webkit-transition: height 1s ease-in-out;
-	-moz-transition: height 1s ease-in-out;
 	transition: height 1s ease-in-out;
 	box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.35);
 }
@@ -143,9 +139,6 @@ header{
 	transform: none;
 }
 #cineMap.offline-map{
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   background-image: url('../assets/images/offlinemap.jpg');
@@ -158,8 +151,6 @@ header{
 	padding: 20px;
 	position: relative;
 	z-index: 2;
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.52);
 }	
@@ -255,8 +246,6 @@ figure{
 figure img{
 	height: auto;
 	max-width: 100%;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 }
 figcaption{
