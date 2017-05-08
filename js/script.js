@@ -248,7 +248,7 @@ $(document).ready(function(){
 		var thisTime = $(this).text();
 		$(this).parent().parent().toggleClass("open active").children("a").text(thisTime);
 		
-		var lastClicked = $(this).parent().parent().parent().child("h5").value();
+		var lastClicked = $(this).parent().parent().parent().children("h5").text();
 		localStorage.setItem('lastVisited', JSON.stringify(lastClicked));
 	});
 	$("body").on("click","a.date-controls",function() {
