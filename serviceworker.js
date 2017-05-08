@@ -10,6 +10,7 @@ var CACHED_URLS = [
     BASEPATH +  'js/films.json',
     BASEPATH +  'js/cinemas.json',
     BASEPATH +  'js/scripts-min.js',
+    BASEPATH +  'js/scripts.js',
     BASEPATH +  'js/offline-map.js',    
   // Images
     BASEPATH + 'assets/images/fantastic-thumb.jpg',
