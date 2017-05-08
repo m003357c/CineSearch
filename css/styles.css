@@ -497,10 +497,10 @@ figcaption{
 	}
 }
 @media (min-width: 460px){
-	#boxOffice .film-list-port{
+	#boxOffice .films-offline{
 		width: 100%;
 	}
-	#boxOffice .film-out{
+	#boxOffice .films-offline .film-out{
 		max-width: 320px;
 		margin: 0 auto;
 	}
@@ -536,7 +536,7 @@ figcaption{
 	    margin: 0 0 20px 0;
 	    font-size: 34px;
 	}
-	#boxOffice .film-list-port{
+	#boxOffice .films-offline{
 		width: 50%;
 		float: left;
 	}
@@ -575,8 +575,5 @@ figcaption{
 		width: 25%;
 		text-align: center;
 		margin: 20px 0 10px 0;
-	}
-	#boxOffice .film-list-port{
-		width: 33%;
 	}
 }
