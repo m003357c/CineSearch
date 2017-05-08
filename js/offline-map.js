@@ -85,8 +85,6 @@ if(offlineBoxOffice){
 var offlineSearch = '<h2>You are offline</h2><p>The films and times below are from your previous search</p>';
 document.getElementById('searchBox').innerHTML = offlineSearch;
 
-var value = document.getElementsByTagName("li").value;
-
 var lists = document.getElementsByTagName("li");
 for (var i = 0; i < lists.length; ++i) {
     if(lists[i].value == "undefined"){
