@@ -250,7 +250,7 @@ $(document).ready(function(){
 		
 		var lastClicked = $(this).parent().parent().parent().parent().children("h5").text();
 		console.log(lastClicked);
-		localStorage.setItem('lastVisited', JSON.stringify(lastClicked));
+		localStorage.setItem('lastVisited', lastClicked);
 	});
 	$("body").on("click","a.date-controls",function() {
 		$(".date-controls.active").removeClass("active");
