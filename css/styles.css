@@ -509,6 +509,7 @@ figcaption{
 	    padding: 40px 20px;
 	    width: 80%;
 	    margin: 0 auto;
+	    text-align: center;
 	}
 	#searchBox .filmSearch a.btn {
 	    padding: 5px 40px;
