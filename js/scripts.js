@@ -248,7 +248,7 @@ $(document).ready(function(){
 		var thisTime = $(this).text();
 		$(this).parent().parent().toggleClass("open active").children("a").text(thisTime);
 		
-		var lastClicked = $(this).parent().parent().parent().children("h5").text();
+		var lastClicked = $(this).parent().parent().parent().parent().children("h5").text();
 		console.log(lastClicked);
 		localStorage.setItem('lastVisited', JSON.stringify(lastClicked));
 	});
