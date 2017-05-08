@@ -237,8 +237,8 @@ $(document).ready(function(){
 		$("#filmTimes").hide();
 		$(".film-times-inner").empty();
 	});
-	$("body").on("click","li.dropdown a",function(e) {
-		e.preventDefault();
+	$("body").on("click","li.dropdown a",function() {
+		
 		if($(this).parent().hasClass("open")){
 			$(this).parent().removeClass("open");
 		} else{
