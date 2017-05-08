@@ -41,46 +41,7 @@
 	  <div id="mapHolder">
 		<div id="cineMap">
 		
-		</div> 
-	        <script>
-		      /*function initMap() {
-			var uluru = {lat: -25.363, lng: 131.044};
-			var map = new google.maps.Map(document.getElementById('map'), {
-			  zoom: 4,
-			  center: uluru
-			});
-			var marker = new google.maps.Marker({
-			  position: uluru,
-			  map: map
-			});
-		      }*/
-			function initMap(){	
-				/*if (document.getElementById( 'cineMap' ) === null) {
-					return false;
-				}  */
-				var defaultLoc = {lat: 53.010596, lng: -2.179887};
-				var map = new google.maps.Map(document.getElementById('cineMap' ),{
-					zoom: 12,  
-					center: defaultLoc,
-					zoomControl: true,
-					mapTypeControl: false,
-					scaleControl: true,
-					streetViewControl: false,
-					rotateControl: false,
-					fullscreenControl: false,
-					draggable: true
-				});
-				if (navigator.geolocation) {
-					navigator.geolocation.getCurrentPosition(function(position) {
-						var pos = {
-							lat: position.coords.latitude,
-							lng: position.coords.longitude
-						};
-						map.setCenter(pos);		  
-					});
-				}
-			}
-                </script>
+		</div> 	        
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap"></script>
 	  </div>
 	  <article id="searchBox" class="box">
