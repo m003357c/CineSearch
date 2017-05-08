@@ -193,7 +193,7 @@ $(document).ready(function(){
 										  '</div>' +
 										  '<div class="film-times">' +
 											'<h5>' + film.name + '</h5>' +
-											'<p><a href="#" class="btn date-change">&lt;</a>Today<a href="#" class="btn date-change">&gt;</a></p>' +
+											'<p>Today</p>' +
 											'<ul>' +
 												'<li class="dropdown">' +
 													'<a href="#">3D</a>' +
