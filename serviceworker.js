@@ -24,6 +24,8 @@ var CACHED_URLS = [
     BASEPATH + 'assets/images/location.png',
     BASEPATH + 'assets/images/back.png',
     BASEPATH + 'assets/images/offlinemap.jpg',
+    BASEPATH + 'assets/icons/favicon-16x16.png',
+    BASEPATH + 'assets/icons/favicon-96x96.png',
     // External
     'https://fonts.googleapis.com/css?family=Roboto:400,300',
     'https://code.jquery.com/jquery-3.2.1.min.js'
