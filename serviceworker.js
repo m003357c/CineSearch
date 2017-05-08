@@ -31,7 +31,7 @@ var CACHED_URLS = [
     'https://code.jquery.com/jquery-3.2.1.min.js'
 ];
 
-var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk&callback=initMap';
+var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAIQ0fiOINDNybmeceuZqZhzKLc_0JLXpk';
 
 self.addEventListener('install', function(event) {
   // Cache everything in CACHED_URLS. Installation will fail if something fails to cache
