@@ -4,7 +4,8 @@ var CACHED_URLS = [
   // HTML
     BASEPATH + 'index.html',
   // Stylesheets and fonts    
-    BASEPATH +  'css/style-min.css',    
+    BASEPATH +  'css/styles.css',
+    BASEPATH +  'css/styles-min.css',    
   // JavaScript
     BASEPATH +  'assets/icons/manifest.json',
     BASEPATH +  'js/films.json',
