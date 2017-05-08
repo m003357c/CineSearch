@@ -13,7 +13,7 @@ let options = {
 	timeout: 5000,
 	maximumAge: 0
 };
-window.initMap = function(){	
+/*function initMap(){	
 	if (document.getElementById( 'cineMap' ) === null) {
 		return false;
 	}  
@@ -38,7 +38,7 @@ window.initMap = function(){
 			map.setCenter(pos);		  
 		});
 	}
-}
+}*/
 
 const boxOfficeContainer = document.getElementById('boxOffice');
 if(boxOfficeContainer){
