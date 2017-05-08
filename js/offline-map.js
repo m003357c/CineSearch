@@ -64,13 +64,17 @@ if(offlineBoxOffice){
                                   </li>
                                   <li class="dropdown">
                                     <a href="#">Standard</a>
-                                    <ul class="dropdown-menu">
-                                      <li>${film.times.standard[0]}</li>
-                                      <li>${film.times.standard[1]}</li>
-                                      <li>${film.times.standard[2]}</li>
-                                      <li>${film.times.standard[3]}</li>
-                                      <li>${film.times.standard[4]}</li>
-                                    </ul>
+                                    <ul class="dropdown-menu">`
+                                        /*film.times.standard.forEach(function(item, i){
+                                            var standardFilmTimes = `<li>${film.times.standard[i]}</li>`;
+                                            
+                                        });*/
+                                      
+                                      //<li>${film.times.standard[1]}</li>
+                                      //<li>${film.times.standard[2]}</li>
+                                      //<li>${film.times.standard[3]}</li>
+                                      //<li>${film.times.standard[4]}</li>
+                                    `</ul>
                                   </li>
                                 </ul>
                                 </div>
